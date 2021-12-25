@@ -1,17 +1,34 @@
 #ifndef LOGIC_H_
 #define LOGIC_H_
 
-//Max tested value: 1200
-#define N 400
-#define SCREEN_WIDTH 2*N
-#define SCREEN_HEIGHT 2*N
-#define CELL_WIDTH (SCREEN_WIDTH / N)
-#define CELL_HEIGHT (SCREEN_HEIGHT / N)
+//Max tested value: 2000
+#define N 200
+#if N > 1000
+#   define SCREEN_WIDTH 1000
+#   define SCREEN_HEIGHT 1000
+#else 
+#   define SCREEN_WIDTH N * 2
+#   define SCREEN_HEIGHT N * 2
+#endif
+
+#if N > SCREEN_WIDTH
+#   define CELL_WIDTH 1
+#else 
+#   define CELL_WIDTH (SCREEN_WIDTH / N)
+#endif
+
+#if N > SCREEN_HEIGHT
+#   define CELL_HEIGHT 1
+#else 
+#   define CELL_HEIGHT (SCREEN_HEIGHT / N)
+#endif
 #define MOVES_PER_FRAME 1
 #define MOVES_PER_SECOND 60
 
 //number of threads maximum  we use to make the efficiency curves
 #define THREADS 16
+//Minimum number of blocks for grid for tested devices
+#define BLOCKSIZE 256
 
 //* this two defines are to use the sys/time.h include , so they must be declared before, we can also declare them in the command line when running the code with -D_DEFAULT_SOURCE  -D_BSD_SOURCE
 //#define _DEFAULT_SOURCE

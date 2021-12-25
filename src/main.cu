@@ -149,13 +149,12 @@ int main(int argc, char **argv)
                     //make rock is the sum is small
                     if (y > (N-(N/2.1))) { //make the sea
                         state.board[idx] = WATER;
-                    } else if (y > (N-(N/1.05))) { //make sand
+                    } else if (y > min((N-(N/1.05)), (double)500)) { //make sand
                         state.board[idx] = SAND;
                     } 
                     
-                    if(y < 40){
-                        state.board[idx] = AIR;
-                    }
+                    if(y < 40) state.board[idx] = AIR;
+                    if(y > 500) state.board[idx] = WATER;
 
                     /*
                     if (y < (N-(N*0.75))&& y > (N-(N*0.8)) && x < (N-(N*0.25)) && x > (N-(N*0.3) )) { //make sand
@@ -199,12 +198,16 @@ int main(int argc, char **argv)
 
     // set up data size of board
     int nElem = N * N;
-    size_t nBytesBoards = nElem * sizeof(u_int8_t);
-    size_t nBytesBool = nElem * sizeof(bool);
     u_int8_t *d_board;
+    bool *d_has_moved;
+    bool has_moved[N*N] = {false};
+        
     //Calcular los tamaños de los arreglos
     size_t nBytesStates = nElem * sizeof(curandState);
+    size_t nBytesBoards = nElem * sizeof(u_int8_t);
+    size_t nBytesBool = nElem * sizeof(bool);
     // malloc device global memory
+    cudaMalloc((bool **)&d_has_moved, nBytesBool);
     cudaMalloc((u_int8_t **)&d_board, nBytesBoards);
     //Random functions in device
     curandState *d_random;
@@ -212,8 +215,9 @@ int main(int argc, char **argv)
     unsigned int seed = (unsigned int) time(&t);
     // malloc random numbers in device
     cudaMalloc((void**)&d_random, nBytesStates);
-    // transfer data from host to device
+    // transfer initial data from host to device
     cudaMemcpy(d_board, state.board, nBytesBoards, cudaMemcpyHostToDevice);
+    cudaMemcpy(d_has_moved, has_moved, nBytesBool, cudaMemcpyHostToDevice);
 
     //=================================================//
 
@@ -391,7 +395,7 @@ int main(int argc, char **argv)
                 break;
             }
             case FALLING_SAND_SIM:{
-                world_sand_simOnGPU(renderer, &state, d_board, d_random, seed);
+                world_sand_simOnGPU(renderer, &state, d_board, d_has_moved, d_random, seed);
                 break;
             }
         }
@@ -414,6 +418,7 @@ int main(int argc, char **argv)
     // free device global memory
     cudaFree(d_board);
     cudaFree(d_random);
+    cudaFree(d_has_moved);
 
     return EXIT_SUCCESS;
 }

@@ -38,7 +38,8 @@ const SDL_Color ANT_COLOR = { .r = 255, .g = 50, .b = 50 };
 
 
 //NUMBER OF THREADS WE ARE USING IN SPECIFIC MOMENT
-int threads=1;
+int blockSize=1024;
+int gridSize=0;
 int s_cambio_threads = 10; //Segundos para aumentar las thread
 
 //Variables benchmarking Render Grid
@@ -53,17 +54,22 @@ void render_grid(SDL_Renderer *renderer, const state_t *state)
 
     resetTimer(TVAL_THREAD_2); //Actualizar timer
     
-    if(( getTimerS(TVAL_THREAD_2)-getTimerS(TVAL_THREAD_1) >= s_cambio_threads) && (threads <= THREADS)){
+    if(( getTimerS(TVAL_THREAD_2)-getTimerS(TVAL_THREAD_1) >= s_cambio_threads) && (blockSize >= BLOCKSIZE)){
         
         double avg_fps = render_grid_framecnt/s_cambio_threads;
         long double avg_time = ((avg_time_render_grid/avg_fps)/s_cambio_threads)*1000000;
         fps_render_grid = avg_fps;
-        SDL_Log("[RENDER] Threads: %d, #de FPS promedio de los anteriores %d segundos: %0.1f, Tiempo promedio (ms): %0.1Lf", 
-        threads, 
+
+        int nElem = N * N;
+        gridSize = (nElem + blockSize - 1) / blockSize;
+
+        SDL_Log("[RENDER] : kernels: <<<%d,%d>>>, #de FPS promedio de los anteriores %d segundos: %0.1f, Tiempo promedio (us): %0.1Lf", 
+        gridSize,
+        blockSize, 
         s_cambio_threads, 
         avg_fps,
         avg_time);
-        //threads ++; //aumenta # threads
+        blockSize -= 128; //reduce el tamaño del bloque
         resetTimer(TVAL_THREAD_2); //Actualizar timer
         resetTimer(TVAL_THREAD_1); //Actualizar timer
         render_grid_framecnt = 0; //Reiniciar la cuenta
@@ -140,13 +146,13 @@ void render_grid(SDL_Renderer *renderer, const state_t *state)
         avg_time_render_grid += d/1000000;
 
         char str[128];
-        sprintf(str, "Total time to loop the whole program (ms): %0.1Lf", 
+        sprintf(str, "Total time to loop the whole program (us): %0.1Lf", 
             d
            );
         renderFormattedText(renderer, str, 0 , 20);
 
         char str2[128];
-        sprintf(str2, "Threads: %d, AVG_FPS(%d s): %d", threads, s_cambio_threads, fps_render_grid);
+        sprintf(str2, "Kernel: <<<%d,%d>>>, AVG_FPS(%d s): %d", gridSize, blockSize, s_cambio_threads, fps_render_grid);
         renderFormattedText(renderer, str2, 250 , 0);
 
         //* calculate total time to run the whole program
@@ -482,12 +488,11 @@ __global__ void sandsimGPU(u_int8_t *board, bool *has_moved, const int n, curand
     //Inicializar las funciones random de CUDA
     curand_init(seed, idx, 0, &states[idx]);
 
-    if (!has_moved[idx]) //Si no se ha movido en este frame
-    {
+    //if (!has_moved[idx]) //Si no se ha movido en este frame
+    //{
         if (board[idx] == SAND){
             sandsim_mover_abajo_y_ladosGPU(board, SAND, has_moved, idx, n, states);
         }
-
         if(board[idx] == ROCK){
             sandsim_mover_abajoGPU(board, ROCK, has_moved, idx, n, states);
         }
@@ -525,41 +530,85 @@ __global__ void sandsimGPU(u_int8_t *board, bool *has_moved, const int n, curand
             }   
         }
 
-    }
+    //}
+}
+
+__global__ void resetHasMovedGPU(bool *has_moved, const int n)
+{
+    int idx = blockIdx.x * blockDim.x + threadIdx.x;
+    has_moved[idx] = false;
 }
 
 //=========================================================//
 
+
+//Variables benchmarking Función SandSim
+int sandsim_framecnt = 0;
+int blocksize_sandsim = 1024;
+int fps_sandsim = 0;
+//double time_sandsim_acum = 0;
+double avg_time_sandsim = 0;
+double avg_FPS_sandsim = 0;
+
 //***** world_sand_sim() RUNS THE SIMULATION logic for all elements of the world
-void world_sand_simOnGPU(SDL_Renderer *renderer, state_t *state, u_int8_t *d_board, curandState *d_random, unsigned int seed)
+void world_sand_simOnGPU(SDL_Renderer *renderer, state_t *state, u_int8_t *d_board, bool *d_has_moved, curandState *d_random, unsigned int seed)
 {
 
-    if (state->mode == RUNNING_MODE){        
+    ++sandsim_framecnt; //Sumando los fps de sandsim
+
+    if (state->mode == RUNNING_MODE){
+
+        //CÁLCULO DE EL TIEMPO PROMEDIO PARA CADA NUMERO DE THREADS
+        if(blockSize != blocksize_sandsim){
+            double avg_fps = sandsim_framecnt/s_cambio_threads;
+            long double avg_time = (avg_time_sandsim /avg_fps) / s_cambio_threads; 
+            
+            int nElem = N * N;
+            int gridsize_sandsim = (nElem + blocksize_sandsim - 1) / blocksize_sandsim;
+
+            SDL_Log("[SANDSIM] Tiempo promedio para el kernel <<<%d,%d>>> (us): %0.1Lf",gridsize_sandsim, blocksize_sandsim,avg_time);
+            avg_time_sandsim = 0; //Reinciar el conteo del promedio acumulado en X segundos
+            sandsim_framecnt = 0;
+            blocksize_sandsim = blockSize; //Se actualiza la variable para el contador interno de sandsim
+        }
+
+
         for (int i = 0; i < MOVES_PER_FRAME; i++) {
         
-        //========== CUDA FOR SANDSIM =================//
-        bool has_moved[N*N] = {false};
+            //*calculate time to render the grid
+            struct timeval tval_before_sandsim, tval_after_sandsim, tval_result_sandsim;
+            gettimeofday(&tval_before_sandsim, NULL);
 
+        //========== CUDA FOR SANDSIM =================//
         // set up data size of board
         int nElem = N * N;
         size_t nBytesBoards = nElem * sizeof(u_int8_t);
         size_t nBytesBool = nElem * sizeof(bool);
-        bool *d_has_moved;
-        // malloc device global memory
-        cudaMalloc((bool **)&d_has_moved, nBytesBool);
+
+
         // transfer data from host to device
-        cudaMemcpy(d_has_moved, has_moved, nBytesBool, cudaMemcpyHostToDevice);
+        
         // invoke kernel at host side
-        int iLen = 1024;
-        dim3 block(iLen);
+        int iLen = 256;
+        dim3 block(blockSize);
         dim3 grid((nElem + block.x - 1) / block.x);
         sandsimGPU<<<grid, block>>>(d_board, d_has_moved, N, d_random, seed);
-        cudaDeviceSynchronize();
+        resetHasMovedGPU<<<grid, block>>>(d_has_moved, N);
+        //cudaDeviceSynchronize();
         // copy kernel result back to host side
-        cudaMemcpy(state->board, d_board, nBytesBoards, cudaMemcpyDeviceToHost);
-
-        cudaFree(d_has_moved);
+        cudaMemcpyAsync(state->board, d_board, nBytesBoards, cudaMemcpyDeviceToHost);
         //==============================================//
+        
+        //*calculate time to render the grid
+        gettimeofday(&tval_after_sandsim, NULL);
+
+        timersub(&tval_after_sandsim, &tval_before_sandsim, &tval_result_sandsim);
+
+        avg_time_sandsim += tval_result_sandsim.tv_usec;
+
+        char str[128];
+        sprintf(str, "Total time to execute function world_sand_sim (us): %ld", (long int)tval_result_sandsim.tv_usec);
+        renderFormattedText(renderer, str, 0 , 40);
         }
     }  
     

@@ -2,7 +2,7 @@
 #define LOGIC_H_
 
 //Max tested value: 2000
-#define N 200
+#define N 400
 #if N > 1000
 #   define SCREEN_WIDTH 1000
 #   define SCREEN_HEIGHT 1000

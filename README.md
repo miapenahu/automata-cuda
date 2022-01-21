@@ -12,6 +12,12 @@ Implementation of different celullar automata with SDL2 in C. Developed and test
 * nvcc \`sdl2-config --cflags --libs\`  src/main.cu src/render.cu src/util.cu -o automata-cuda -lSDL2 -lSDL2_ttf
 * `./bin/main`
 
+## Profiling
+*`sudo nvprof ./automata-cuda sandsim`
+
+### With api trace and log file
+*`sudo nvprof --print-api-trace --log-file [LOG]sandsim-api-trace.log ./automata-cuda sandsim`
+
 ## Command
 
 nvcc `sdl2-config --cflags --libs`  src/main.cu src/render.cu src/util.cu -o automata-cuda -lSDL2 -lSDL2_ttf

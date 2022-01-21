@@ -414,7 +414,8 @@ int main(int argc, char **argv)
     TTF_Quit();
     // you could SDL_Quit(); here...or not.
     SDL_Quit();
-
+    //Profiler stop
+    cudaProfilerStop();
     // free device global memory
     cudaFree(d_board);
     cudaFree(d_random);

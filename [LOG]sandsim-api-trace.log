@@ -1,0 +1,2638 @@
+==21021== NVPROF is profiling process 21021, command: ./automata-cuda sandsim
+==21021== Profiling application: ./automata-cuda sandsim
+==21021== Profiling result:
+   Start  Duration  Name
+184.64ms  10.551us  cuDeviceGetPCIBusId
+198.03ms  3.0170us  cuDeviceGetCount
+198.04ms     165ns  cuDeviceGetCount
+198.26ms     971ns  cuDeviceGet
+198.26ms     907ns  cuDeviceGetAttribute
+198.27ms     193ns  cuDeviceGetAttribute
+198.27ms     406ns  cuDeviceGetAttribute
+198.30ms     220ns  cuDeviceGetCount
+198.30ms     143ns  cuDeviceGet
+198.31ms  61.880us  cuDeviceGetName
+198.37ms     591ns  cuDeviceTotalMem
+198.37ms     344ns  cuDeviceGetAttribute
+198.37ms     155ns  cuDeviceGetAttribute
+198.37ms     268ns  cuDeviceGetAttribute
+198.38ms     153ns  cuDeviceGetAttribute
+198.38ms     156ns  cuDeviceGetAttribute
+198.38ms  19.121us  cuDeviceGetAttribute
+198.40ms     255ns  cuDeviceGetAttribute
+198.40ms     148ns  cuDeviceGetAttribute
+198.40ms     156ns  cuDeviceGetAttribute
+198.40ms     149ns  cuDeviceGetAttribute
+198.40ms     395ns  cuDeviceGetAttribute
+198.40ms     142ns  cuDeviceGetAttribute
+198.40ms     140ns  cuDeviceGetAttribute
+198.40ms     141ns  cuDeviceGetAttribute
+198.40ms     145ns  cuDeviceGetAttribute
+198.40ms     144ns  cuDeviceGetAttribute
+198.40ms     156ns  cuDeviceGetAttribute
+198.40ms     145ns  cuDeviceGetAttribute
+198.40ms     148ns  cuDeviceGetAttribute
+198.40ms     144ns  cuDeviceGetAttribute
+198.40ms     143ns  cuDeviceGetAttribute
+198.40ms     139ns  cuDeviceGetAttribute
+198.40ms     143ns  cuDeviceGetAttribute
+198.40ms     141ns  cuDeviceGetAttribute
+198.40ms     149ns  cuDeviceGetAttribute
+198.40ms     139ns  cuDeviceGetAttribute
+198.40ms     149ns  cuDeviceGetAttribute
+198.40ms     147ns  cuDeviceGetAttribute
+198.40ms     144ns  cuDeviceGetAttribute
+198.40ms     142ns  cuDeviceGetAttribute
+198.40ms     144ns  cuDeviceGetAttribute
+198.40ms     144ns  cuDeviceGetAttribute
+198.40ms     144ns  cuDeviceGetAttribute
+198.40ms     148ns  cuDeviceGetAttribute
+198.40ms     143ns  cuDeviceGetAttribute
+198.41ms     146ns  cuDeviceGetAttribute
+198.41ms     142ns  cuDeviceGetAttribute
+198.41ms     143ns  cuDeviceGetAttribute
+198.41ms     142ns  cuDeviceGetAttribute
+198.41ms     141ns  cuDeviceGetAttribute
+198.41ms     142ns  cuDeviceGetAttribute
+198.41ms     141ns  cuDeviceGetAttribute
+198.41ms     140ns  cuDeviceGetAttribute
+198.41ms     140ns  cuDeviceGetAttribute
+198.41ms     149ns  cuDeviceGetAttribute
+198.41ms     157ns  cuDeviceGetAttribute
+198.41ms     141ns  cuDeviceGetAttribute
+198.41ms     143ns  cuDeviceGetAttribute
+198.41ms     140ns  cuDeviceGetAttribute
+198.41ms     146ns  cuDeviceGetAttribute
+198.41ms     142ns  cuDeviceGetAttribute
+198.41ms     140ns  cuDeviceGetAttribute
+198.41ms     142ns  cuDeviceGetAttribute
+198.41ms     146ns  cuDeviceGetAttribute
+198.41ms     143ns  cuDeviceGetAttribute
+198.41ms  76.107us  cuDeviceGetAttribute
+198.49ms     174ns  cuDeviceGetAttribute
+198.49ms     151ns  cuDeviceGetAttribute
+198.49ms     146ns  cuDeviceGetAttribute
+198.49ms     150ns  cuDeviceGetAttribute
+198.49ms     151ns  cuDeviceGetAttribute
+198.49ms     148ns  cuDeviceGetAttribute
+198.49ms     183ns  cuDeviceGetAttribute
+198.49ms     156ns  cuDeviceGetAttribute
+198.49ms     144ns  cuDeviceGetAttribute
+198.49ms     140ns  cuDeviceGetAttribute
+198.49ms     160ns  cuDeviceGetAttribute
+198.49ms     142ns  cuDeviceGetAttribute
+198.49ms     151ns  cuDeviceGetAttribute
+198.49ms     143ns  cuDeviceGetAttribute
+198.49ms     141ns  cuDeviceGetAttribute
+198.49ms     143ns  cuDeviceGetAttribute
+198.49ms     233ns  cuDeviceGetAttribute
+198.49ms     149ns  cuDeviceGetAttribute
+198.49ms     145ns  cuDeviceGetAttribute
+198.49ms     144ns  cuDeviceGetAttribute
+198.49ms  58.531us  cuDeviceGetAttribute
+198.55ms     167ns  cuDeviceGetAttribute
+198.55ms     219ns  cuDeviceGetAttribute
+198.55ms     149ns  cuDeviceGetAttribute
+198.55ms     148ns  cuDeviceGetAttribute
+198.55ms     150ns  cuDeviceGetAttribute
+198.56ms     146ns  cuDeviceGetAttribute
+198.56ms     150ns  cuDeviceGetAttribute
+198.56ms     743ns  cuDeviceGetAttribute
+198.56ms     168ns  cuDeviceGetAttribute
+198.56ms     146ns  cuDeviceGetAttribute
+198.56ms     146ns  cuDeviceGetAttribute
+198.56ms     704ns  cuDeviceGetAttribute
+198.56ms     144ns  cuDeviceGetAttribute
+198.56ms     274ns  cuDeviceGetAttribute
+198.56ms     131ns  cuDeviceGetAttribute
+198.56ms     157ns  cuDeviceGetAttribute
+198.56ms     142ns  cuDeviceGetAttribute
+198.56ms     261ns  cuDeviceGetUuid
+198.56ms  137.04ms  cudaMalloc
+335.60ms  3.9320us  cudaMalloc
+335.61ms  92.537us  cudaMalloc
+335.70ms  70.732us  cudaMemcpy
+335.77ms  149.12us  cudaMemcpy
+352.76ms  631.46us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [112])
+353.39ms  8.2870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [113])
+353.40ms  111.11ms  cudaMemcpyAsync
+482.52ms  39.998us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [115])
+482.56ms  6.7220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [116])
+482.57ms  109.51ms  cudaMemcpyAsync
+607.71ms  38.391us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [118])
+607.75ms  6.0890us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [119])
+607.75ms  109.49ms  cudaMemcpyAsync
+733.05ms  48.299us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [121])
+733.10ms  6.7190us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [122])
+733.10ms  109.43ms  cudaMemcpyAsync
+860.65ms  41.416us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [124])
+860.69ms  6.7390us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [125])
+860.69ms  105.30ms  cudaMemcpyAsync
+982.35ms  38.634us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [127])
+982.39ms  6.9400us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [128])
+982.40ms  105.60ms  cudaMemcpyAsync
+1.10396s  47.486us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [130])
+1.10400s  8.8570us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [131])
+1.10401s  110.19ms  cudaMemcpyAsync
+1.22975s  39.140us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [133])
+1.22979s  6.6020us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [134])
+1.22979s  106.76ms  cudaMemcpyAsync
+1.35132s  38.377us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [136])
+1.35136s  6.4710us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [137])
+1.35137s  108.80ms  cudaMemcpyAsync
+1.47506s  38.851us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [139])
+1.47510s  6.6130us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [140])
+1.47511s  107.53ms  cudaMemcpyAsync
+1.59772s  39.727us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [142])
+1.59776s  6.7510us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [143])
+1.59777s  107.52ms  cudaMemcpyAsync
+1.72003s  37.004us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [145])
+1.72007s  6.1230us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [146])
+1.72008s  108.33ms  cudaMemcpyAsync
+1.84463s  48.224us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [148])
+1.84468s  7.7070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [149])
+1.84469s  107.58ms  cudaMemcpyAsync
+1.96780s  43.549us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [151])
+1.96784s  7.2360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [152])
+1.96785s  109.45ms  cudaMemcpyAsync
+2.09225s  38.352us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [154])
+2.09229s  6.0880us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [155])
+2.09230s  107.46ms  cudaMemcpyAsync
+2.21469s  36.794us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [157])
+2.21472s  6.3390us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [158])
+2.21473s  107.75ms  cudaMemcpyAsync
+2.33757s  37.292us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [160])
+2.33761s  6.7210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [161])
+2.33762s  107.37ms  cudaMemcpyAsync
+2.45994s  43.126us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [163])
+2.45999s  7.1210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [164])
+2.45999s  108.03ms  cudaMemcpyAsync
+2.58301s  37.295us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [166])
+2.58305s  6.1430us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [167])
+2.58305s  108.42ms  cudaMemcpyAsync
+2.70668s  45.712us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [169])
+2.70673s  6.1640us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [170])
+2.70674s  106.22ms  cudaMemcpyAsync
+2.82811s  38.808us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [172])
+2.82815s  6.2850us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [173])
+2.82815s  106.20ms  cudaMemcpyAsync
+2.94938s  37.159us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [175])
+2.94942s  6.5720us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [176])
+2.94942s  108.41ms  cudaMemcpyAsync
+3.07313s  38.406us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [178])
+3.07317s  6.6080us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [179])
+3.07318s  107.90ms  cudaMemcpyAsync
+3.19612s  37.144us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [181])
+3.19616s  6.3100us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [182])
+3.19617s  112.42ms  cudaMemcpyAsync
+3.32420s  38.706us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [184])
+3.32424s  7.0680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [185])
+3.32425s  111.99ms  cudaMemcpyAsync
+3.45132s  38.696us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [187])
+3.45136s  6.5810us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [188])
+3.45137s  108.90ms  cudaMemcpyAsync
+3.57576s  39.791us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [190])
+3.57580s  6.8510us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [191])
+3.57581s  115.49ms  cudaMemcpyAsync
+3.70653s  42.295us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [193])
+3.70657s  6.2800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [194])
+3.70658s  107.60ms  cudaMemcpyAsync
+3.82952s  40.220us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [196])
+3.82956s  6.9070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [197])
+3.82957s  108.29ms  cudaMemcpyAsync
+3.95318s  51.549us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [199])
+3.95324s  7.5300us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [200])
+3.95324s  107.05ms  cudaMemcpyAsync
+4.07608s  46.694us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [202])
+4.07612s  7.3540us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [203])
+4.07613s  107.58ms  cudaMemcpyAsync
+4.19895s  31.484us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [205])
+4.19899s  6.5850us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [206])
+4.19899s  108.91ms  cudaMemcpyAsync
+4.32321s  38.687us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [208])
+4.32324s  6.2210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [209])
+4.32325s  107.10ms  cudaMemcpyAsync
+4.44747s  38.974us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [211])
+4.44751s  6.7160us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [212])
+4.44751s  107.82ms  cudaMemcpyAsync
+4.57311s  40.580us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [214])
+4.57316s  5.9250us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [215])
+4.57316s  107.67ms  cudaMemcpyAsync
+4.69819s  48.444us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [217])
+4.69824s  7.3990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [218])
+4.69825s  107.75ms  cudaMemcpyAsync
+4.82136s  36.517us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [220])
+4.82140s  6.2110us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [221])
+4.82140s  107.91ms  cudaMemcpyAsync
+4.94473s  38.176us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [223])
+4.94477s  6.2970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [224])
+4.94477s  107.19ms  cudaMemcpyAsync
+5.06738s  41.160us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [226])
+5.06742s  7.0460us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [227])
+5.06743s  108.98ms  cudaMemcpyAsync
+5.19188s  43.474us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [229])
+5.19193s  7.1510us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [230])
+5.19193s  107.40ms  cudaMemcpyAsync
+5.31486s  43.815us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [232])
+5.31491s  6.7150us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [233])
+5.31491s  108.72ms  cudaMemcpyAsync
+5.43911s  38.174us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [235])
+5.43915s  5.8160us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [236])
+5.43916s  107.86ms  cudaMemcpyAsync
+5.56251s  36.619us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [238])
+5.56254s  5.7280us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [239])
+5.56255s  107.49ms  cudaMemcpyAsync
+5.68540s  32.269us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [241])
+5.68544s  6.1130us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [242])
+5.68544s  109.00ms  cudaMemcpyAsync
+5.81015s  38.704us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [244])
+5.81019s  6.7200us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [245])
+5.81020s  107.65ms  cudaMemcpyAsync
+5.93345s  36.036us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [247])
+5.93348s  6.3230us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [248])
+5.93349s  109.17ms  cudaMemcpyAsync
+6.05826s  37.787us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [250])
+6.05830s  6.5050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [251])
+6.05831s  106.80ms  cudaMemcpyAsync
+6.18084s  39.730us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [253])
+6.18088s  7.5460us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [254])
+6.18089s  108.85ms  cudaMemcpyAsync
+6.30535s  37.841us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [256])
+6.30539s  6.0890us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [257])
+6.30539s  106.77ms  cudaMemcpyAsync
+6.42788s  39.342us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [259])
+6.42792s  5.8960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [260])
+6.42793s  107.25ms  cudaMemcpyAsync
+6.55083s  44.713us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [262])
+6.55088s  6.8750us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [263])
+6.55088s  108.66ms  cudaMemcpyAsync
+6.67520s  37.808us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [265])
+6.67524s  6.2500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [266])
+6.67524s  107.87ms  cudaMemcpyAsync
+6.79888s  37.005us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [268])
+6.79891s  6.5440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [269])
+6.79892s  107.68ms  cudaMemcpyAsync
+6.92236s  37.800us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [271])
+6.92240s  6.3990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [272])
+6.92241s  107.64ms  cudaMemcpyAsync
+7.04579s  36.419us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [274])
+7.04583s  5.8760us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [275])
+7.04583s  106.60ms  cudaMemcpyAsync
+7.16811s  34.813us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [277])
+7.16814s  5.8250us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [278])
+7.16815s  106.86ms  cudaMemcpyAsync
+7.29083s  36.458us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [280])
+7.29087s  6.3800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [281])
+7.29088s  107.49ms  cudaMemcpyAsync
+7.41416s  33.075us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [283])
+7.41420s  6.0610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [284])
+7.41420s  108.49ms  cudaMemcpyAsync
+7.53863s  40.371us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [286])
+7.53868s  7.4370us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [287])
+7.53868s  109.12ms  cudaMemcpyAsync
+7.66382s  43.391us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [289])
+7.66386s  8.0740us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [290])
+7.66387s  109.29ms  cudaMemcpyAsync
+7.78937s  37.312us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [292])
+7.78941s  5.9010us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [293])
+7.78942s  107.06ms  cudaMemcpyAsync
+7.91245s  36.764us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [295])
+7.91248s  5.9010us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [296])
+7.91249s  107.55ms  cudaMemcpyAsync
+8.03615s  43.416us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [298])
+8.03619s  6.4760us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [299])
+8.03620s  108.04ms  cudaMemcpyAsync
+8.16019s  37.085us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [301])
+8.16022s  5.6640us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [302])
+8.16023s  107.56ms  cudaMemcpyAsync
+8.28359s  32.802us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [304])
+8.28362s  5.9040us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [305])
+8.28363s  109.12ms  cudaMemcpyAsync
+8.40882s  49.036us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [307])
+8.40887s  6.0160us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [308])
+8.40888s  107.58ms  cudaMemcpyAsync
+8.53233s  34.030us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [310])
+8.53237s  5.8050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [311])
+8.53238s  109.17ms  cudaMemcpyAsync
+8.65757s  52.143us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [313])
+8.65762s  7.9110us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [314])
+8.65763s  107.96ms  cudaMemcpyAsync
+8.78167s  37.684us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [316])
+8.78171s  5.7580us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [317])
+8.78172s  108.78ms  cudaMemcpyAsync
+8.90650s  35.353us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [319])
+8.90653s  6.1160us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [320])
+8.90654s  107.92ms  cudaMemcpyAsync
+9.03086s  37.297us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [322])
+9.03090s  5.9060us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [323])
+9.03090s  115.09ms  cudaMemcpyAsync
+9.16224s  37.654us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [325])
+9.16228s  6.5260us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [326])
+9.16229s  110.53ms  cudaMemcpyAsync
+9.28909s  36.890us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [328])
+9.28913s  5.7240us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [329])
+9.28914s  110.48ms  cudaMemcpyAsync
+9.41600s  38.652us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [331])
+9.41604s  6.7800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [332])
+9.41604s  111.56ms  cudaMemcpyAsync
+9.54385s  37.595us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [334])
+9.54389s  5.9600us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [335])
+9.54389s  110.30ms  cudaMemcpyAsync
+9.67045s  39.816us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [337])
+9.67049s  7.4330us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [338])
+9.67050s  110.58ms  cudaMemcpyAsync
+9.79723s  38.647us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [340])
+9.79727s  6.3070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [341])
+9.79727s  111.18ms  cudaMemcpyAsync
+9.92489s  39.120us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [343])
+9.92493s  6.4920us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [344])
+9.92494s  109.90ms  cudaMemcpyAsync
+10.0514s  46.815us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [346])
+10.0514s  7.4340us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [347])
+10.0514s  111.15ms  cudaMemcpyAsync
+10.1788s  35.865us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [349])
+10.1789s  5.8960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [350])
+10.1789s  110.47ms  cudaMemcpyAsync
+10.3058s  35.613us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [352])
+10.3058s  6.4700us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [353])
+10.3058s  110.70ms  cudaMemcpyAsync
+10.4349s  44.711us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [355])
+10.4350s  7.8280us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [356])
+10.4350s  110.64ms  cudaMemcpyAsync
+10.5621s  35.882us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [358])
+10.5622s  5.7660us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [359])
+10.5622s  110.35ms  cudaMemcpyAsync
+10.6890s  41.708us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [361])
+10.6891s  6.3550us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [362])
+10.6891s  110.56ms  cudaMemcpyAsync
+10.8160s  36.732us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [364])
+10.8161s  5.6440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [365])
+10.8161s  111.16ms  cudaMemcpyAsync
+10.9440s  37.769us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [367])
+10.9441s  6.2450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [368])
+10.9441s  110.39ms  cudaMemcpyAsync
+11.0709s  38.209us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [370])
+11.0710s  5.6870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [371])
+11.0710s  110.55ms  cudaMemcpyAsync
+11.1979s  32.125us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [373])
+11.1980s  6.1500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [374])
+11.1980s  111.70ms  cudaMemcpyAsync
+11.3262s  36.854us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [376])
+11.3262s  5.9990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [377])
+11.3263s  110.08ms  cudaMemcpyAsync
+11.4529s  32.961us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [379])
+11.4529s  5.9790us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [380])
+11.4529s  111.06ms  cudaMemcpyAsync
+11.5805s  40.412us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [382])
+11.5806s  6.0410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [383])
+11.5806s  111.19ms  cudaMemcpyAsync
+11.7083s  35.782us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [385])
+11.7084s  5.9000us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [386])
+11.7084s  110.36ms  cudaMemcpyAsync
+11.8353s  36.802us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [388])
+11.8353s  6.1800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [389])
+11.8353s  110.40ms  cudaMemcpyAsync
+11.9623s  36.258us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [391])
+11.9623s  5.6810us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [392])
+11.9623s  110.41ms  cudaMemcpyAsync
+12.0894s  34.100us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [394])
+12.0894s  6.0070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [395])
+12.0894s  110.66ms  cudaMemcpyAsync
+12.2167s  47.115us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [397])
+12.2168s  6.4840us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [398])
+12.2168s  111.57ms  cudaMemcpyAsync
+12.3452s  36.849us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [400])
+12.3452s  5.6570us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [401])
+12.3452s  110.78ms  cudaMemcpyAsync
+12.4728s  52.461us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [403])
+12.4729s  6.6860us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [404])
+12.4729s  110.06ms  cudaMemcpyAsync
+12.6000s  40.870us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [406])
+12.6000s  7.3980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [407])
+12.6000s  111.44ms  cudaMemcpyAsync
+12.7298s  37.117us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [409])
+12.7298s  6.3970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [410])
+12.7298s  111.24ms  cudaMemcpyAsync
+12.8580s  37.846us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [412])
+12.8580s  6.2040us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [413])
+12.8580s  110.20ms  cudaMemcpyAsync
+12.9851s  46.309us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [415])
+12.9851s  6.5900us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [416])
+12.9851s  109.99ms  cudaMemcpyAsync
+13.1119s  35.304us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [418])
+13.1120s  5.6830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [419])
+13.1120s  110.64ms  cudaMemcpyAsync
+13.2394s  39.198us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [421])
+13.2394s  6.4610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [422])
+13.2394s  110.64ms  cudaMemcpyAsync
+13.3670s  49.266us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [424])
+13.3671s  6.7670us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [425])
+13.3671s  111.45ms  cudaMemcpyAsync
+13.4954s  38.309us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [427])
+13.4954s  6.6860us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [428])
+13.4955s  111.25ms  cudaMemcpyAsync
+13.6236s  34.649us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [430])
+13.6237s  6.5610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [431])
+13.6237s  110.46ms  cudaMemcpyAsync
+13.7511s  42.200us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [433])
+13.7511s  6.6010us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [434])
+13.7512s  110.43ms  cudaMemcpyAsync
+13.8786s  45.373us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [436])
+13.8787s  6.9180us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [437])
+13.8787s  111.17ms  cudaMemcpyAsync
+14.0068s  41.694us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [439])
+14.0068s  6.8600us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [440])
+14.0068s  110.52ms  cudaMemcpyAsync
+14.1344s  35.381us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [442])
+14.1344s  5.8380us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [443])
+14.1344s  110.65ms  cudaMemcpyAsync
+14.2622s  40.243us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [445])
+14.2622s  6.2990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [446])
+14.2622s  111.34ms  cudaMemcpyAsync
+14.3906s  37.105us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [448])
+14.3906s  5.9040us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [449])
+14.3906s  110.53ms  cudaMemcpyAsync
+14.5182s  40.595us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [451])
+14.5182s  6.8360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [452])
+14.5182s  110.94ms  cudaMemcpyAsync
+14.6462s  38.086us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [454])
+14.6462s  6.1510us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [455])
+14.6462s  111.67ms  cudaMemcpyAsync
+14.7753s  37.915us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [457])
+14.7753s  5.7590us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [458])
+14.7753s  110.18ms  cudaMemcpyAsync
+14.9026s  35.834us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [460])
+14.9026s  6.1170us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [461])
+14.9026s  110.58ms  cudaMemcpyAsync
+15.0305s  40.909us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [463])
+15.0305s  5.7240us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [464])
+15.0305s  111.57ms  cudaMemcpyAsync
+15.1593s  36.074us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [466])
+15.1593s  5.8630us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [467])
+15.1593s  110.97ms  cudaMemcpyAsync
+15.2875s  35.097us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [469])
+15.2875s  6.1360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [470])
+15.2875s  110.98ms  cudaMemcpyAsync
+15.4157s  39.526us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [472])
+15.4158s  7.6970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [473])
+15.4158s  111.55ms  cudaMemcpyAsync
+15.5446s  43.662us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [475])
+15.5446s  6.2870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [476])
+15.5446s  111.21ms  cudaMemcpyAsync
+15.6731s  34.158us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [478])
+15.6731s  5.7800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [479])
+15.6731s  110.54ms  cudaMemcpyAsync
+15.8010s  36.611us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [481])
+15.8010s  6.1220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [482])
+15.8010s  110.51ms  cudaMemcpyAsync
+15.9289s  34.901us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [484])
+15.9289s  6.4600us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [485])
+15.9289s  111.17ms  cudaMemcpyAsync
+16.0575s  37.698us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [487])
+16.0575s  6.4410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [488])
+16.0575s  110.32ms  cudaMemcpyAsync
+16.1853s  44.086us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [490])
+16.1853s  7.0520us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [491])
+16.1853s  110.49ms  cudaMemcpyAsync
+16.3132s  36.046us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [493])
+16.3132s  6.3390us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [494])
+16.3132s  111.34ms  cudaMemcpyAsync
+16.4418s  35.992us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [496])
+16.4419s  6.1910us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [497])
+16.4419s  110.60ms  cudaMemcpyAsync
+16.5697s  35.554us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [499])
+16.5697s  5.8390us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [500])
+16.5697s  110.70ms  cudaMemcpyAsync
+16.6978s  39.954us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [502])
+16.6979s  8.0980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [503])
+16.6979s  111.07ms  cudaMemcpyAsync
+16.8263s  36.829us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [505])
+16.8264s  5.9940us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [506])
+16.8264s  110.66ms  cudaMemcpyAsync
+16.9545s  37.275us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [508])
+16.9545s  6.1660us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [509])
+16.9545s  110.51ms  cudaMemcpyAsync
+17.0825s  46.905us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [511])
+17.0825s  7.6590us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [512])
+17.0825s  110.94ms  cudaMemcpyAsync
+17.2109s  40.090us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [514])
+17.2109s  6.7360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [515])
+17.2109s  111.24ms  cudaMemcpyAsync
+17.3396s  36.957us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [517])
+17.3396s  5.8560us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [518])
+17.3397s  110.60ms  cudaMemcpyAsync
+17.4680s  36.391us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [520])
+17.4680s  6.0960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [521])
+17.4680s  110.66ms  cudaMemcpyAsync
+17.5961s  39.415us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [523])
+17.5962s  6.8540us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [524])
+17.5962s  111.58ms  cudaMemcpyAsync
+17.7251s  34.978us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [526])
+17.7252s  5.8340us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [527])
+17.7252s  110.42ms  cudaMemcpyAsync
+17.8531s  37.528us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [529])
+17.8531s  6.1150us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [530])
+17.8531s  110.51ms  cudaMemcpyAsync
+17.9813s  57.371us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [532])
+17.9813s  7.4370us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [533])
+17.9814s  111.44ms  cudaMemcpyAsync
+18.1104s  37.307us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [535])
+18.1104s  6.5390us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [536])
+18.1104s  110.00ms  cudaMemcpyAsync
+18.2381s  37.620us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [538])
+18.2381s  6.0560us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [539])
+18.2381s  110.22ms  cudaMemcpyAsync
+18.3660s  37.497us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [541])
+18.3661s  5.8470us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [542])
+18.3661s  110.59ms  cudaMemcpyAsync
+18.4942s  34.712us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [544])
+18.4943s  5.7970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [545])
+18.4943s  111.42ms  cudaMemcpyAsync
+18.6234s  42.392us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [547])
+18.6234s  6.5940us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [548])
+18.6234s  110.16ms  cudaMemcpyAsync
+18.7513s  36.909us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [550])
+18.7513s  6.5080us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [551])
+18.7513s  110.72ms  cudaMemcpyAsync
+18.8798s  39.099us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [553])
+18.8798s  6.0210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [554])
+18.8798s  111.78ms  cudaMemcpyAsync
+19.0096s  40.686us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [556])
+19.0096s  6.6160us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [557])
+19.0096s  107.04ms  cudaMemcpyAsync
+19.1348s  37.133us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [559])
+19.1349s  6.1980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [560])
+19.1349s  101.71ms  cudaMemcpyAsync
+19.2545s  37.378us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [562])
+19.2545s  6.0650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [563])
+19.2545s  101.17ms  cudaMemcpyAsync
+19.3736s  38.230us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [565])
+19.3736s  6.1330us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [566])
+19.3736s  102.08ms  cudaMemcpyAsync
+19.4936s  37.612us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [568])
+19.4936s  6.5190us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [569])
+19.4936s  102.63ms  cudaMemcpyAsync
+19.6142s  43.100us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [571])
+19.6142s  8.2750us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [572])
+19.6143s  102.19ms  cudaMemcpyAsync
+19.7344s  38.535us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [574])
+19.7345s  6.1690us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [575])
+19.7345s  101.65ms  cudaMemcpyAsync
+19.8542s  38.509us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [577])
+19.8542s  6.0770us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [578])
+19.8542s  102.39ms  cudaMemcpyAsync
+19.9746s  37.432us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [580])
+19.9747s  5.9900us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [581])
+19.9747s  100.91ms  cudaMemcpyAsync
+20.0937s  37.713us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [583])
+20.0937s  6.0700us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [584])
+20.0937s  100.92ms  cudaMemcpyAsync
+20.2127s  42.530us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [586])
+20.2127s  6.4970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [587])
+20.2127s  100.76ms  cudaMemcpyAsync
+20.3317s  35.530us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [589])
+20.3317s  5.6870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [590])
+20.3317s  101.89ms  cudaMemcpyAsync
+20.4516s  35.971us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [592])
+20.4517s  6.5070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [593])
+20.4517s  101.68ms  cudaMemcpyAsync
+20.5717s  40.184us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [595])
+20.5717s  6.8490us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [596])
+20.5717s  100.32ms  cudaMemcpyAsync
+20.6904s  45.071us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [598])
+20.6905s  7.0010us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [599])
+20.6905s  101.78ms  cudaMemcpyAsync
+20.8105s  37.629us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [601])
+20.8105s  5.9750us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [602])
+20.8105s  102.80ms  cudaMemcpyAsync
+20.9315s  38.270us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [604])
+20.9316s  6.4400us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [605])
+20.9316s  101.74ms  cudaMemcpyAsync
+21.0515s  38.227us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [607])
+21.0515s  5.8990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [608])
+21.0515s  101.42ms  cudaMemcpyAsync
+21.1712s  38.896us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [610])
+21.1713s  5.9800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [611])
+21.1713s  101.71ms  cudaMemcpyAsync
+21.2912s  37.570us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [613])
+21.2913s  6.4320us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [614])
+21.2913s  102.00ms  cudaMemcpyAsync
+21.4115s  41.155us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [616])
+21.4115s  6.3430us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [617])
+21.4115s  101.18ms  cudaMemcpyAsync
+21.5310s  44.925us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [619])
+21.5311s  8.6970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [620])
+21.5311s  102.13ms  cudaMemcpyAsync
+21.6516s  37.501us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [622])
+21.6516s  6.2620us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [623])
+21.6516s  101.16ms  cudaMemcpyAsync
+21.7710s  37.778us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [625])
+21.7711s  5.5090us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [626])
+21.7711s  99.138ms  cudaMemcpyAsync
+21.8885s  37.339us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [628])
+21.8885s  6.0410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [629])
+21.8885s  101.61ms  cudaMemcpyAsync
+22.0085s  35.582us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [631])
+22.0085s  6.4920us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [632])
+22.0085s  100.73ms  cudaMemcpyAsync
+22.1275s  33.641us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [634])
+22.1276s  6.4590us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [635])
+22.1276s  102.53ms  cudaMemcpyAsync
+22.2487s  35.841us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [637])
+22.2488s  6.5230us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [638])
+22.2488s  102.39ms  cudaMemcpyAsync
+22.3695s  37.554us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [640])
+22.3695s  6.0010us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [641])
+22.3696s  102.43ms  cudaMemcpyAsync
+22.4904s  36.743us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [643])
+22.4904s  6.3930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [644])
+22.4904s  100.68ms  cudaMemcpyAsync
+22.6095s  40.806us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [646])
+22.6095s  6.4420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [647])
+22.6095s  102.79ms  cudaMemcpyAsync
+22.7308s  56.452us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [649])
+22.7308s  6.5470us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [650])
+22.7308s  102.70ms  cudaMemcpyAsync
+22.8521s  40.636us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [652])
+22.8522s  7.6290us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [653])
+22.8522s  101.48ms  cudaMemcpyAsync
+22.9721s  36.726us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [655])
+22.9721s  6.4180us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [656])
+22.9721s  102.61ms  cudaMemcpyAsync
+23.0932s  40.030us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [658])
+23.0932s  6.5060us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [659])
+23.0932s  103.22ms  cudaMemcpyAsync
+23.2149s  34.113us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [661])
+23.2149s  6.0410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [662])
+23.2149s  102.49ms  cudaMemcpyAsync
+23.3359s  37.048us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [664])
+23.3360s  5.7840us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [665])
+23.3360s  102.62ms  cudaMemcpyAsync
+23.4572s  37.736us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [667])
+23.4572s  6.4070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [668])
+23.4572s  100.73ms  cudaMemcpyAsync
+23.5765s  34.489us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [670])
+23.5765s  5.5050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [671])
+23.5765s  102.06ms  cudaMemcpyAsync
+23.6974s  34.829us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [673])
+23.6974s  5.9890us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [674])
+23.6974s  101.35ms  cudaMemcpyAsync
+23.8174s  36.288us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [676])
+23.8175s  6.7360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [677])
+23.8175s  101.50ms  cudaMemcpyAsync
+23.9375s  36.909us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [679])
+23.9376s  5.9990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [680])
+23.9376s  101.56ms  cudaMemcpyAsync
+24.0577s  41.891us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [682])
+24.0578s  5.7680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [683])
+24.0578s  101.28ms  cudaMemcpyAsync
+24.1776s  39.921us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [685])
+24.1777s  6.8610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [686])
+24.1777s  103.48ms  cudaMemcpyAsync
+24.2998s  42.292us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [688])
+24.2998s  6.4870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [689])
+24.2998s  100.42ms  cudaMemcpyAsync
+24.4189s  36.439us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [691])
+24.4189s  6.0400us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [692])
+24.4189s  100.95ms  cudaMemcpyAsync
+24.5386s  35.186us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [694])
+24.5387s  6.2060us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [695])
+24.5387s  101.86ms  cudaMemcpyAsync
+24.6592s  38.760us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [697])
+24.6592s  6.5740us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [698])
+24.6592s  100.70ms  cudaMemcpyAsync
+24.7787s  37.340us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [700])
+24.7787s  7.5140us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [701])
+24.7788s  100.35ms  cudaMemcpyAsync
+24.8977s  37.305us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [703])
+24.8978s  5.9190us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [704])
+24.8978s  101.97ms  cudaMemcpyAsync
+25.0185s  51.032us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [706])
+25.0186s  6.4980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [707])
+25.0186s  99.273ms  cudaMemcpyAsync
+25.1366s  37.217us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [709])
+25.1366s  6.1730us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [710])
+25.1366s  101.69ms  cudaMemcpyAsync
+25.2572s  35.718us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [712])
+25.2573s  6.3660us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [713])
+25.2573s  98.921ms  cudaMemcpyAsync
+25.3749s  42.667us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [715])
+25.3750s  5.9910us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [716])
+25.3750s  101.59ms  cudaMemcpyAsync
+25.4953s  49.306us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [718])
+25.4954s  7.1890us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [719])
+25.4954s  103.18ms  cudaMemcpyAsync
+25.6173s  37.004us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [721])
+25.6174s  6.0110us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [722])
+25.6174s  100.62ms  cudaMemcpyAsync
+25.7367s  35.488us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [724])
+25.7367s  5.9880us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [725])
+25.7368s  99.413ms  cudaMemcpyAsync
+25.8551s  37.190us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [727])
+25.8551s  5.8860us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [728])
+25.8551s  101.96ms  cudaMemcpyAsync
+25.9758s  36.649us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [730])
+25.9759s  6.3330us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [731])
+25.9759s  102.09ms  cudaMemcpyAsync
+26.0968s  38.114us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [733])
+26.0969s  6.0870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [734])
+26.0969s  101.93ms  cudaMemcpyAsync
+26.2175s  35.612us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [736])
+26.2176s  5.7270us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [737])
+26.2176s  101.99ms  cudaMemcpyAsync
+26.3385s  38.775us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [739])
+26.3386s  6.6370us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [740])
+26.3386s  100.12ms  cudaMemcpyAsync
+26.4575s  35.737us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [742])
+26.4575s  6.0850us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [743])
+26.4576s  102.01ms  cudaMemcpyAsync
+26.5785s  47.254us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [745])
+26.5786s  8.2740us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [746])
+26.5786s  102.66ms  cudaMemcpyAsync
+26.7001s  36.372us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [748])
+26.7002s  5.8020us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [749])
+26.7002s  100.83ms  cudaMemcpyAsync
+26.8201s  36.977us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [751])
+26.8201s  6.2650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [752])
+26.8201s  101.50ms  cudaMemcpyAsync
+26.9406s  36.461us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [754])
+26.9406s  6.2210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [755])
+26.9406s  102.07ms  cudaMemcpyAsync
+27.0616s  38.420us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [757])
+27.0617s  6.0930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [758])
+27.0617s  102.89ms  cudaMemcpyAsync
+27.1841s  37.869us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [760])
+27.1841s  6.5360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [761])
+27.1841s  101.24ms  cudaMemcpyAsync
+27.3044s  36.034us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [763])
+27.3045s  6.5510us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [764])
+27.3045s  100.48ms  cudaMemcpyAsync
+27.4239s  36.781us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [766])
+27.4240s  6.1970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [767])
+27.4240s  101.46ms  cudaMemcpyAsync
+27.5444s  38.117us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [769])
+27.5445s  6.6610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [770])
+27.5445s  100.54ms  cudaMemcpyAsync
+27.6640s  35.949us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [772])
+27.6641s  6.0020us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [773])
+27.6641s  99.391ms  cudaMemcpyAsync
+27.7824s  36.158us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [775])
+27.7824s  6.4110us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [776])
+27.7824s  101.35ms  cudaMemcpyAsync
+27.9028s  36.545us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [778])
+27.9028s  5.6930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [779])
+27.9028s  101.91ms  cudaMemcpyAsync
+28.0237s  36.580us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [781])
+28.0238s  5.9240us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [782])
+28.0238s  101.66ms  cudaMemcpyAsync
+28.1445s  52.808us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [784])
+28.1445s  7.1700us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [785])
+28.1445s  101.91ms  cudaMemcpyAsync
+28.2653s  36.641us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [787])
+28.2653s  5.7730us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [788])
+28.2653s  102.15ms  cudaMemcpyAsync
+28.3867s  36.626us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [790])
+28.3867s  5.7450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [791])
+28.3867s  101.74ms  cudaMemcpyAsync
+28.5075s  37.886us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [793])
+28.5075s  7.6960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [794])
+28.5075s  101.25ms  cudaMemcpyAsync
+28.6277s  35.466us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [796])
+28.6278s  7.3420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [797])
+28.6278s  101.26ms  cudaMemcpyAsync
+28.7481s  36.238us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [799])
+28.7482s  6.0720us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [800])
+28.7482s  101.86ms  cudaMemcpyAsync
+28.8692s  36.837us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [802])
+28.8693s  5.9970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [803])
+28.8693s  98.636ms  cudaMemcpyAsync
+28.9875s  38.743us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [805])
+28.9875s  5.5780us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [806])
+28.9876s  107.15ms  cudaMemcpyAsync
+29.1139s  36.271us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [808])
+29.1140s  6.4480us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [809])
+29.1140s  101.36ms  cudaMemcpyAsync
+29.2345s  37.364us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [811])
+29.2346s  6.1040us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [812])
+29.2346s  102.41ms  cudaMemcpyAsync
+29.3564s  41.627us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [814])
+29.3564s  8.2180us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [815])
+29.3564s  100.36ms  cudaMemcpyAsync
+29.4759s  31.196us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [817])
+29.4760s  6.1090us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [818])
+29.4760s  102.69ms  cudaMemcpyAsync
+29.5978s  37.116us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [820])
+29.5979s  6.1940us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [821])
+29.5979s  101.06ms  cudaMemcpyAsync
+29.7183s  39.595us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [823])
+29.7184s  6.3510us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [824])
+29.7184s  101.77ms  cudaMemcpyAsync
+29.8397s  38.222us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [826])
+29.8398s  6.3270us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [827])
+29.8398s  101.93ms  cudaMemcpyAsync
+29.9611s  38.366us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [829])
+29.9612s  6.0220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [830])
+29.9612s  102.90ms  cudaMemcpyAsync
+30.0834s  36.845us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [832])
+30.0835s  5.9400us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [833])
+30.0835s  101.21ms  cudaMemcpyAsync
+30.2040s  36.144us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [835])
+30.2040s  5.9690us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [836])
+30.2040s  101.68ms  cudaMemcpyAsync
+30.3249s  32.872us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [838])
+30.3249s  6.4720us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [839])
+30.3249s  102.19ms  cudaMemcpyAsync
+30.4465s  36.114us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [841])
+30.4465s  5.9950us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [842])
+30.4465s  101.75ms  cudaMemcpyAsync
+30.5676s  42.185us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [844])
+30.5677s  6.3610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [845])
+30.5677s  102.66ms  cudaMemcpyAsync
+30.6896s  35.570us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [847])
+30.6896s  6.5030us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [848])
+30.6896s  102.14ms  cudaMemcpyAsync
+30.8111s  35.200us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [850])
+30.8111s  6.4360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [851])
+30.8112s  102.11ms  cudaMemcpyAsync
+30.9325s  37.660us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [853])
+30.9325s  6.2320us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [854])
+30.9326s  102.22ms  cudaMemcpyAsync
+31.0542s  37.677us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [856])
+31.0542s  6.5200us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [857])
+31.0542s  101.25ms  cudaMemcpyAsync
+31.1747s  41.929us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [859])
+31.1748s  7.3710us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [860])
+31.1748s  103.12ms  cudaMemcpyAsync
+31.2973s  36.911us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [862])
+31.2973s  6.1420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [863])
+31.2973s  102.29ms  cudaMemcpyAsync
+31.4190s  35.463us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [865])
+31.4190s  6.3990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [866])
+31.4190s  101.58ms  cudaMemcpyAsync
+31.5398s  39.164us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [868])
+31.5399s  6.7980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [869])
+31.5399s  101.71ms  cudaMemcpyAsync
+31.6610s  34.413us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [871])
+31.6610s  6.0830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [872])
+31.6610s  101.39ms  cudaMemcpyAsync
+31.7817s  38.078us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [874])
+31.7818s  6.3500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [875])
+31.7818s  101.79ms  cudaMemcpyAsync
+31.9029s  38.009us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [877])
+31.9029s  6.2880us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [878])
+31.9029s  101.42ms  cudaMemcpyAsync
+32.0235s  32.312us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [880])
+32.0236s  6.7620us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [881])
+32.0236s  101.87ms  cudaMemcpyAsync
+32.1448s  37.124us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [883])
+32.1449s  6.3700us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [884])
+32.1449s  101.49ms  cudaMemcpyAsync
+32.2656s  36.985us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [886])
+32.2656s  5.8110us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [887])
+32.2656s  101.08ms  cudaMemcpyAsync
+32.3860s  36.656us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [889])
+32.3860s  6.2870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [890])
+32.3860s  101.40ms  cudaMemcpyAsync
+32.5065s  31.956us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [892])
+32.5066s  5.6220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [893])
+32.5066s  102.71ms  cudaMemcpyAsync
+32.6285s  37.680us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [895])
+32.6285s  5.9390us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [896])
+32.6285s  101.63ms  cudaMemcpyAsync
+32.7495s  53.354us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [898])
+32.7495s  7.7530us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [899])
+32.7495s  102.35ms  cudaMemcpyAsync
+32.8712s  37.249us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [901])
+32.8712s  6.6000us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [902])
+32.8712s  101.89ms  cudaMemcpyAsync
+32.9925s  40.726us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [904])
+32.9926s  6.5310us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [905])
+32.9926s  102.04ms  cudaMemcpyAsync
+33.1138s  35.739us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [907])
+33.1139s  6.4860us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [908])
+33.1139s  100.70ms  cudaMemcpyAsync
+33.2338s  35.462us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [910])
+33.2338s  6.3620us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [911])
+33.2338s  102.30ms  cudaMemcpyAsync
+33.3557s  38.896us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [913])
+33.3557s  6.3210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [914])
+33.3557s  100.90ms  cudaMemcpyAsync
+33.4759s  44.645us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [916])
+33.4760s  6.5900us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [917])
+33.4760s  102.40ms  cudaMemcpyAsync
+33.5978s  39.020us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [919])
+33.5978s  6.6840us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [920])
+33.5978s  100.85ms  cudaMemcpyAsync
+33.7179s  37.917us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [922])
+33.7180s  6.5300us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [923])
+33.7180s  101.72ms  cudaMemcpyAsync
+33.8389s  38.030us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [925])
+33.8389s  6.1180us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [926])
+33.8390s  102.01ms  cudaMemcpyAsync
+33.9603s  41.686us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [928])
+33.9604s  11.000us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [929])
+33.9604s  100.05ms  cudaMemcpyAsync
+34.0797s  40.836us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [931])
+34.0798s  6.6670us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [932])
+34.0798s  101.25ms  cudaMemcpyAsync
+34.2003s  36.137us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [934])
+34.2003s  6.1600us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [935])
+34.2003s  100.99ms  cudaMemcpyAsync
+34.3206s  37.257us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [937])
+34.3206s  6.2480us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [938])
+34.3206s  101.03ms  cudaMemcpyAsync
+34.4408s  33.763us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [940])
+34.4408s  6.0440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [941])
+34.4409s  102.17ms  cudaMemcpyAsync
+34.5624s  35.320us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [943])
+34.5624s  6.2010us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [944])
+34.5624s  101.87ms  cudaMemcpyAsync
+34.6835s  35.706us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [946])
+34.6836s  6.0300us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [947])
+34.6836s  102.06ms  cudaMemcpyAsync
+34.8050s  37.432us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [949])
+34.8050s  6.3030us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [950])
+34.8050s  101.07ms  cudaMemcpyAsync
+34.9256s  37.641us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [952])
+34.9257s  6.5500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [953])
+34.9257s  101.71ms  cudaMemcpyAsync
+35.0468s  37.049us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [955])
+35.0469s  6.0540us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [956])
+35.0469s  101.15ms  cudaMemcpyAsync
+35.1673s  36.747us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [958])
+35.1673s  6.3680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [959])
+35.1673s  101.72ms  cudaMemcpyAsync
+35.2883s  35.679us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [961])
+35.2883s  6.1960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [962])
+35.2883s  101.39ms  cudaMemcpyAsync
+35.4090s  45.224us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [964])
+35.4091s  7.3530us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [965])
+35.4091s  101.73ms  cudaMemcpyAsync
+35.5301s  36.586us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [967])
+35.5301s  6.1060us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [968])
+35.5301s  101.13ms  cudaMemcpyAsync
+35.6506s  36.364us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [970])
+35.6506s  6.0200us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [971])
+35.6506s  101.87ms  cudaMemcpyAsync
+35.7719s  38.709us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [973])
+35.7719s  6.5220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [974])
+35.7719s  101.34ms  cudaMemcpyAsync
+35.8926s  48.180us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [976])
+35.8927s  7.5540us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [977])
+35.8927s  101.94ms  cudaMemcpyAsync
+36.0142s  37.562us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [979])
+36.0142s  6.6770us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [980])
+36.0143s  101.91ms  cudaMemcpyAsync
+36.1354s  39.305us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [982])
+36.1355s  6.4520us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [983])
+36.1355s  101.22ms  cudaMemcpyAsync
+36.2559s  43.428us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [985])
+36.2560s  6.5500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [986])
+36.2560s  101.96ms  cudaMemcpyAsync
+36.3773s  35.836us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [988])
+36.3773s  5.9720us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [989])
+36.3773s  101.73ms  cudaMemcpyAsync
+36.4983s  36.640us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [991])
+36.4983s  5.6880us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [992])
+36.4983s  101.36ms  cudaMemcpyAsync
+36.6189s  37.274us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [994])
+36.6190s  6.0590us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [995])
+36.6190s  101.27ms  cudaMemcpyAsync
+36.7393s  32.969us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [997])
+36.7393s  6.3030us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [998])
+36.7393s  101.86ms  cudaMemcpyAsync
+36.8604s  35.713us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1000])
+36.8604s  6.5790us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1001])
+36.8604s  101.71ms  cudaMemcpyAsync
+36.9813s  35.796us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1003])
+36.9813s  6.0220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1004])
+36.9813s  101.34ms  cudaMemcpyAsync
+37.1018s  34.307us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1006])
+37.1018s  5.9560us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1007])
+37.1018s  101.77ms  cudaMemcpyAsync
+37.2226s  33.341us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1009])
+37.2226s  5.8940us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1010])
+37.2226s  101.18ms  cudaMemcpyAsync
+37.3430s  72.774us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1012])
+37.3431s  6.1300us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1013])
+37.3431s  100.68ms  cudaMemcpyAsync
+37.4628s  35.642us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1015])
+37.4628s  5.7690us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1016])
+37.4628s  101.50ms  cudaMemcpyAsync
+37.5886s  44.971us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1018])
+37.5886s  6.7490us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1019])
+37.5886s  101.64ms  cudaMemcpyAsync
+37.7093s  48.288us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1021])
+37.7094s  7.9630us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1022])
+37.7094s  103.40ms  cudaMemcpyAsync
+37.8319s  37.374us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1024])
+37.8319s  6.1610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1025])
+37.8319s  101.94ms  cudaMemcpyAsync
+37.9530s  45.282us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1027])
+37.9530s  6.3930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1028])
+37.9530s  101.91ms  cudaMemcpyAsync
+38.0740s  36.994us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1030])
+38.0740s  6.5830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1031])
+38.0740s  102.38ms  cudaMemcpyAsync
+38.1954s  41.654us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1033])
+38.1954s  6.3610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1034])
+38.1954s  101.82ms  cudaMemcpyAsync
+38.3163s  33.996us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1036])
+38.3163s  5.5650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1037])
+38.3163s  101.56ms  cudaMemcpyAsync
+38.4370s  44.588us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1039])
+38.4370s  6.6130us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1040])
+38.4370s  102.09ms  cudaMemcpyAsync
+38.5582s  40.929us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1042])
+38.5582s  6.3960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1043])
+38.5582s  102.82ms  cudaMemcpyAsync
+38.6801s  43.907us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1045])
+38.6801s  6.1490us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1046])
+38.6801s  102.23ms  cudaMemcpyAsync
+38.8014s  42.936us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1048])
+38.8014s  6.3110us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1049])
+38.8014s  101.17ms  cudaMemcpyAsync
+38.9219s  38.644us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1051])
+38.9220s  6.1180us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1052])
+38.9220s  102.75ms  cudaMemcpyAsync
+39.0438s  36.121us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1054])
+39.0439s  6.3290us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1055])
+39.0439s  97.820ms  cudaMemcpyAsync
+39.1609s  36.557us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1057])
+39.1610s  5.9730us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1058])
+39.1610s  98.044ms  cudaMemcpyAsync
+39.2781s  34.846us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1060])
+39.2781s  5.7350us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1061])
+39.2781s  97.827ms  cudaMemcpyAsync
+39.3949s  34.757us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1063])
+39.3949s  6.3940us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1064])
+39.3949s  98.150ms  cudaMemcpyAsync
+39.5120s  35.952us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1066])
+39.5121s  6.3620us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1067])
+39.5121s  97.979ms  cudaMemcpyAsync
+39.6291s  35.865us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1069])
+39.6291s  6.5840us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1070])
+39.6291s  97.630ms  cudaMemcpyAsync
+39.7457s  35.741us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1072])
+39.7457s  5.6410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1073])
+39.7457s  98.521ms  cudaMemcpyAsync
+39.8632s  36.344us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1075])
+39.8633s  6.0370us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1076])
+39.8633s  97.844ms  cudaMemcpyAsync
+39.9802s  40.385us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1078])
+39.9803s  6.5290us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1079])
+39.9803s  97.192ms  cudaMemcpyAsync
+40.0966s  37.019us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1081])
+40.0966s  5.7980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1082])
+40.0966s  98.334ms  cudaMemcpyAsync
+40.2141s  35.640us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1084])
+40.2141s  6.4460us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1085])
+40.2141s  98.042ms  cudaMemcpyAsync
+40.3311s  34.829us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1087])
+40.3311s  5.6370us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1088])
+40.3311s  97.130ms  cudaMemcpyAsync
+40.4472s  36.836us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1090])
+40.4473s  6.0240us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1091])
+40.4473s  98.032ms  cudaMemcpyAsync
+40.5642s  35.791us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1093])
+40.5643s  5.6690us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1094])
+40.5643s  97.736ms  cudaMemcpyAsync
+40.6812s  37.171us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1096])
+40.6812s  6.3540us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1097])
+40.6812s  97.819ms  cudaMemcpyAsync
+40.7980s  36.727us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1099])
+40.7981s  6.4810us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1100])
+40.7981s  97.549ms  cudaMemcpyAsync
+40.9145s  36.940us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1102])
+40.9146s  6.3490us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1103])
+40.9146s  96.903ms  cudaMemcpyAsync
+41.0305s  37.868us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1105])
+41.0305s  6.3930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1106])
+41.0305s  97.472ms  cudaMemcpyAsync
+41.1470s  36.618us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1108])
+41.1470s  6.1380us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1109])
+41.1470s  97.969ms  cudaMemcpyAsync
+41.2640s  37.416us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1111])
+41.2640s  6.4470us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1112])
+41.2640s  97.888ms  cudaMemcpyAsync
+41.3809s  37.889us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1114])
+41.3810s  6.1870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1115])
+41.3810s  97.774ms  cudaMemcpyAsync
+41.4977s  43.526us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1117])
+41.4978s  6.5410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1118])
+41.4978s  97.743ms  cudaMemcpyAsync
+41.6144s  35.499us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1120])
+41.6145s  6.1580us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1121])
+41.6145s  97.819ms  cudaMemcpyAsync
+41.7311s  36.699us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1123])
+41.7312s  6.2360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1124])
+41.7312s  98.104ms  cudaMemcpyAsync
+41.8482s  35.495us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1126])
+41.8483s  5.9890us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1127])
+41.8483s  97.530ms  cudaMemcpyAsync
+41.9648s  42.582us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1129])
+41.9648s  7.5400us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1130])
+41.9648s  98.100ms  cudaMemcpyAsync
+42.0819s  36.394us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1132])
+42.0820s  6.0710us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1133])
+42.0820s  97.948ms  cudaMemcpyAsync
+42.1989s  36.856us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1135])
+42.1989s  5.8220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1136])
+42.1989s  97.625ms  cudaMemcpyAsync
+42.3155s  42.465us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1138])
+42.3156s  6.3570us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1139])
+42.3156s  97.871ms  cudaMemcpyAsync
+42.4323s  37.079us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1141])
+42.4324s  5.7450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1142])
+42.4324s  97.651ms  cudaMemcpyAsync
+42.5489s  39.451us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1144])
+42.5489s  5.8260us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1145])
+42.5489s  97.640ms  cudaMemcpyAsync
+42.6655s  35.967us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1147])
+42.6655s  6.4520us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1148])
+42.6655s  97.452ms  cudaMemcpyAsync
+42.7819s  37.411us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1150])
+42.7820s  6.3190us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1151])
+42.7820s  98.379ms  cudaMemcpyAsync
+42.8992s  36.435us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1153])
+42.8993s  5.9290us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1154])
+42.8993s  98.024ms  cudaMemcpyAsync
+43.0162s  38.902us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1156])
+43.0163s  6.3070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1157])
+43.0163s  97.355ms  cudaMemcpyAsync
+43.1324s  36.536us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1159])
+43.1325s  6.1770us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1160])
+43.1325s  97.159ms  cudaMemcpyAsync
+43.2484s  35.544us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1162])
+43.2485s  5.8360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1163])
+43.2485s  98.280ms  cudaMemcpyAsync
+43.3655s  35.928us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1165])
+43.3656s  5.9530us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1166])
+43.3656s  98.289ms  cudaMemcpyAsync
+43.4826s  47.288us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1168])
+43.4827s  6.2050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1169])
+43.4827s  97.043ms  cudaMemcpyAsync
+43.5988s  36.212us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1171])
+43.5988s  6.6890us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1172])
+43.5989s  96.863ms  cudaMemcpyAsync
+43.7145s  36.743us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1174])
+43.7145s  6.1250us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1175])
+43.7145s  97.679ms  cudaMemcpyAsync
+43.8312s  38.441us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1177])
+43.8312s  6.2070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1178])
+43.8312s  97.698ms  cudaMemcpyAsync
+43.9478s  36.628us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1180])
+43.9479s  6.6280us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1181])
+43.9479s  97.606ms  cudaMemcpyAsync
+44.0644s  36.329us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1183])
+44.0644s  6.3220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1184])
+44.0644s  97.393ms  cudaMemcpyAsync
+44.1807s  36.552us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1186])
+44.1808s  6.5840us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1187])
+44.1808s  98.018ms  cudaMemcpyAsync
+44.2977s  43.150us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1189])
+44.2977s  6.7300us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1190])
+44.2977s  97.803ms  cudaMemcpyAsync
+44.4143s  42.836us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1192])
+44.4144s  7.8340us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1193])
+44.4144s  97.722ms  cudaMemcpyAsync
+44.5309s  36.614us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1195])
+44.5310s  6.0090us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1196])
+44.5310s  97.088ms  cudaMemcpyAsync
+44.6469s  36.652us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1198])
+44.6469s  6.3960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1199])
+44.6469s  97.243ms  cudaMemcpyAsync
+44.7630s  37.428us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1201])
+44.7631s  6.5630us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1202])
+44.7631s  97.431ms  cudaMemcpyAsync
+44.8793s  38.272us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1204])
+44.8794s  6.0650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1205])
+44.8794s  97.293ms  cudaMemcpyAsync
+44.9955s  35.851us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1207])
+44.9956s  6.4770us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1208])
+44.9956s  97.830ms  cudaMemcpyAsync
+45.1125s  51.470us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1210])
+45.1126s  7.3690us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1211])
+45.1126s  96.741ms  cudaMemcpyAsync
+45.2281s  36.123us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1213])
+45.2282s  6.2770us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1214])
+45.2282s  97.511ms  cudaMemcpyAsync
+45.3445s  35.651us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1216])
+45.3445s  6.3230us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1217])
+45.3446s  98.219ms  cudaMemcpyAsync
+45.4615s  36.130us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1219])
+45.4616s  6.2790us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1220])
+45.4616s  97.184ms  cudaMemcpyAsync
+45.5776s  35.585us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1222])
+45.5776s  5.9660us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1223])
+45.5776s  97.539ms  cudaMemcpyAsync
+45.6940s  43.766us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1225])
+45.6941s  7.0730us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1226])
+45.6941s  97.826ms  cudaMemcpyAsync
+45.8109s  38.835us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1228])
+45.8109s  6.3620us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1229])
+45.8109s  97.756ms  cudaMemcpyAsync
+45.9274s  37.481us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1231])
+45.9275s  6.1610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1232])
+45.9275s  97.968ms  cudaMemcpyAsync
+46.0442s  43.779us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1234])
+46.0443s  6.5080us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1235])
+46.0443s  97.831ms  cudaMemcpyAsync
+46.1610s  37.050us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1237])
+46.1610s  6.3590us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1238])
+46.1610s  97.024ms  cudaMemcpyAsync
+46.2768s  35.680us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1240])
+46.2769s  6.0070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1241])
+46.2769s  97.664ms  cudaMemcpyAsync
+46.3933s  36.510us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1243])
+46.3934s  6.2680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1244])
+46.3934s  97.541ms  cudaMemcpyAsync
+46.5095s  35.894us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1246])
+46.5096s  6.5190us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1247])
+46.5096s  97.210ms  cudaMemcpyAsync
+46.6257s  48.765us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1249])
+46.6258s  6.3530us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1250])
+46.6258s  97.109ms  cudaMemcpyAsync
+46.7415s  36.852us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1252])
+46.7416s  5.8530us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1253])
+46.7416s  97.205ms  cudaMemcpyAsync
+46.8576s  35.891us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1255])
+46.8576s  6.0680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1256])
+46.8576s  97.888ms  cudaMemcpyAsync
+46.9742s  42.669us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1258])
+46.9743s  6.6930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1259])
+46.9743s  97.115ms  cudaMemcpyAsync
+47.0901s  34.261us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1261])
+47.0901s  6.3800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1262])
+47.0901s  98.344ms  cudaMemcpyAsync
+47.2072s  36.960us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1264])
+47.2072s  6.3920us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1265])
+47.2072s  97.001ms  cudaMemcpyAsync
+47.3228s  37.465us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1267])
+47.3228s  6.0400us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1268])
+47.3228s  97.198ms  cudaMemcpyAsync
+47.4389s  43.084us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1270])
+47.4389s  7.5340us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1271])
+47.4389s  98.095ms  cudaMemcpyAsync
+47.5558s  35.147us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1273])
+47.5558s  6.0950us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1274])
+47.5558s  98.022ms  cudaMemcpyAsync
+47.6727s  35.166us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1276])
+47.6727s  7.5070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1277])
+47.6727s  98.006ms  cudaMemcpyAsync
+47.7894s  36.861us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1279])
+47.7895s  6.4440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1280])
+47.7895s  97.946ms  cudaMemcpyAsync
+47.9062s  36.956us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1282])
+47.9062s  6.1920us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1283])
+47.9063s  98.269ms  cudaMemcpyAsync
+48.0234s  48.123us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1285])
+48.0234s  6.5960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1286])
+48.0234s  97.060ms  cudaMemcpyAsync
+48.1394s  41.328us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1288])
+48.1394s  6.3440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1289])
+48.1394s  98.014ms  cudaMemcpyAsync
+48.2561s  40.742us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1291])
+48.2562s  6.8680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1292])
+48.2562s  97.898ms  cudaMemcpyAsync
+48.3729s  34.690us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1294])
+48.3729s  6.5020us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1295])
+48.3730s  98.046ms  cudaMemcpyAsync
+48.4897s  47.591us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1297])
+48.4898s  6.8480us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1298])
+48.4898s  97.881ms  cudaMemcpyAsync
+48.6063s  36.338us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1300])
+48.6063s  6.5300us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1301])
+48.6063s  97.769ms  cudaMemcpyAsync
+48.7230s  38.178us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1303])
+48.7230s  6.1500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1304])
+48.7230s  98.115ms  cudaMemcpyAsync
+48.8399s  35.901us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1306])
+48.8399s  6.6250us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1307])
+48.8399s  98.276ms  cudaMemcpyAsync
+48.9571s  38.589us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1309])
+48.9572s  6.6380us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1310])
+48.9572s  101.16ms  cudaMemcpyAsync
+49.0772s  36.946us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1312])
+49.0773s  6.6790us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1313])
+49.0773s  97.083ms  cudaMemcpyAsync
+49.1934s  43.914us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1315])
+49.1934s  7.4730us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1316])
+49.1934s  97.146ms  cudaMemcpyAsync
+49.3096s  37.054us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1318])
+49.3096s  6.2920us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1319])
+49.3096s  97.658ms  cudaMemcpyAsync
+49.4261s  36.919us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1321])
+49.4262s  5.9020us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1322])
+49.4262s  96.841ms  cudaMemcpyAsync
+49.5421s  44.013us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1324])
+49.5422s  6.4320us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1325])
+49.5422s  98.257ms  cudaMemcpyAsync
+49.6594s  50.615us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1327])
+49.6594s  6.7360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1328])
+49.6594s  97.865ms  cudaMemcpyAsync
+49.7762s  38.022us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1330])
+49.7762s  5.9540us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1331])
+49.7762s  97.503ms  cudaMemcpyAsync
+49.8929s  38.534us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1333])
+49.8930s  5.9650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1334])
+49.8930s  97.441ms  cudaMemcpyAsync
+50.0099s  39.173us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1336])
+50.0100s  6.2980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1337])
+50.0100s  96.395ms  cudaMemcpyAsync
+50.1253s  43.112us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1339])
+50.1254s  6.3270us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1340])
+50.1254s  97.139ms  cudaMemcpyAsync
+50.2416s  38.752us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1342])
+50.2416s  6.2390us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1343])
+50.2416s  97.226ms  cudaMemcpyAsync
+50.3578s  36.667us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1345])
+50.3578s  6.1760us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1346])
+50.3579s  97.331ms  cudaMemcpyAsync
+50.4948s  47.846us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1348])
+50.4949s  11.128us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1349])
+50.4949s  96.351ms  cudaMemcpyAsync
+50.6113s  39.623us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1351])
+50.6113s  6.7910us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1352])
+50.6114s  97.899ms  cudaMemcpyAsync
+50.7288s  36.822us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1354])
+50.7288s  6.5770us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1355])
+50.7288s  97.290ms  cudaMemcpyAsync
+50.8455s  39.436us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1357])
+50.8456s  6.8730us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1358])
+50.8456s  96.922ms  cudaMemcpyAsync
+50.9616s  50.533us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1360])
+50.9616s  6.4110us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1361])
+50.9616s  96.751ms  cudaMemcpyAsync
+51.0778s  39.270us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1363])
+51.0779s  6.8800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1364])
+51.0779s  97.657ms  cudaMemcpyAsync
+51.1945s  37.401us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1366])
+51.1945s  6.2570us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1367])
+51.1945s  97.771ms  cudaMemcpyAsync
+51.3112s  43.350us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1369])
+51.3113s  8.6870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1370])
+51.3113s  96.816ms  cudaMemcpyAsync
+51.4272s  38.286us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1372])
+51.4272s  6.7830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1373])
+51.4273s  96.793ms  cudaMemcpyAsync
+51.5431s  35.559us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1375])
+51.5431s  6.3290us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1376])
+51.5431s  97.127ms  cudaMemcpyAsync
+51.6592s  46.372us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1378])
+51.6592s  6.9330us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1379])
+51.6592s  98.045ms  cudaMemcpyAsync
+51.7764s  38.288us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1381])
+51.7764s  6.9910us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1382])
+51.7764s  97.508ms  cudaMemcpyAsync
+51.8929s  51.294us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1384])
+51.8930s  6.8490us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1385])
+51.8930s  97.606ms  cudaMemcpyAsync
+52.0096s  51.771us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1387])
+52.0097s  6.5090us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1388])
+52.0097s  96.597ms  cudaMemcpyAsync
+52.1255s  46.732us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1390])
+52.1256s  7.2180us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1391])
+52.1256s  95.971ms  cudaMemcpyAsync
+52.2405s  44.396us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1393])
+52.2406s  6.8620us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1394])
+52.2406s  97.643ms  cudaMemcpyAsync
+52.3572s  37.279us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1396])
+52.3573s  6.5430us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1397])
+52.3573s  97.838ms  cudaMemcpyAsync
+52.4740s  46.017us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1399])
+52.4741s  7.1080us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1400])
+52.4741s  96.781ms  cudaMemcpyAsync
+52.5899s  37.613us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1402])
+52.5900s  6.5450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1403])
+52.5900s  97.172ms  cudaMemcpyAsync
+52.7063s  37.219us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1405])
+52.7063s  6.1650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1406])
+52.7063s  97.318ms  cudaMemcpyAsync
+52.8227s  45.911us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1408])
+52.8227s  6.9030us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1409])
+52.8227s  97.789ms  cudaMemcpyAsync
+52.9395s  44.698us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1411])
+52.9396s  6.8770us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1412])
+52.9396s  98.127ms  cudaMemcpyAsync
+53.0564s  41.422us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1414])
+53.0565s  6.5880us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1415])
+53.0565s  97.427ms  cudaMemcpyAsync
+53.1729s  36.538us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1417])
+53.1729s  6.8230us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1418])
+53.1729s  97.124ms  cudaMemcpyAsync
+53.2890s  44.057us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1420])
+53.2890s  6.9450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1421])
+53.2890s  97.284ms  cudaMemcpyAsync
+53.4052s  38.061us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1423])
+53.4052s  6.5620us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1424])
+53.4052s  97.234ms  cudaMemcpyAsync
+53.5214s  38.669us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1426])
+53.5214s  6.5700us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1427])
+53.5214s  97.592ms  cudaMemcpyAsync
+53.6380s  42.536us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1429])
+53.6381s  6.4910us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1430])
+53.6381s  97.112ms  cudaMemcpyAsync
+53.7541s  35.609us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1432])
+53.7542s  6.5680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1433])
+53.7542s  97.579ms  cudaMemcpyAsync
+53.8707s  43.467us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1435])
+53.8707s  8.1690us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1436])
+53.8707s  97.180ms  cudaMemcpyAsync
+53.9873s  77.095us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1438])
+53.9874s  7.6460us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1439])
+53.9874s  97.580ms  cudaMemcpyAsync
+54.1039s  42.180us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1441])
+54.1040s  6.7640us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1442])
+54.1040s  97.229ms  cudaMemcpyAsync
+54.2201s  35.357us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1444])
+54.2201s  6.3540us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1445])
+54.2202s  97.110ms  cudaMemcpyAsync
+54.3363s  39.921us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1447])
+54.3363s  7.5960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1448])
+54.3364s  97.918ms  cudaMemcpyAsync
+54.4533s  36.113us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1450])
+54.4533s  6.8500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1451])
+54.4533s  97.571ms  cudaMemcpyAsync
+54.5700s  33.400us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1453])
+54.5700s  6.5410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1454])
+54.5700s  97.291ms  cudaMemcpyAsync
+54.6864s  48.382us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1456])
+54.6864s  8.4650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1457])
+54.6865s  97.575ms  cudaMemcpyAsync
+54.8030s  41.646us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1459])
+54.8030s  6.8960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1460])
+54.8030s  98.218ms  cudaMemcpyAsync
+54.9202s  42.786us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1462])
+54.9202s  6.5770us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1463])
+54.9202s  97.184ms  cudaMemcpyAsync
+55.0367s  38.764us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1465])
+55.0367s  7.4220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1466])
+55.0368s  98.055ms  cudaMemcpyAsync
+55.1539s  42.500us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1468])
+55.1539s  6.7350us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1469])
+55.1539s  97.594ms  cudaMemcpyAsync
+55.2705s  41.144us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1471])
+55.2706s  6.4870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1472])
+55.2706s  97.912ms  cudaMemcpyAsync
+55.3875s  36.366us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1474])
+55.3875s  6.5470us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1475])
+55.3875s  97.274ms  cudaMemcpyAsync
+55.5040s  36.875us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1477])
+55.5040s  6.5730us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1478])
+55.5040s  97.119ms  cudaMemcpyAsync
+55.6202s  34.948us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1480])
+55.6202s  5.9780us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1481])
+55.6202s  97.782ms  cudaMemcpyAsync
+55.7371s  42.274us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1483])
+55.7372s  6.6090us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1484])
+55.7372s  96.966ms  cudaMemcpyAsync
+55.8533s  37.059us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1486])
+55.8533s  6.4680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1487])
+55.8533s  98.309ms  cudaMemcpyAsync
+55.9706s  43.624us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1489])
+55.9706s  6.9060us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1490])
+55.9707s  97.040ms  cudaMemcpyAsync
+56.0866s  36.223us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1492])
+56.0867s  6.6710us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1493])
+56.0867s  96.951ms  cudaMemcpyAsync
+56.2027s  41.166us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1495])
+56.2027s  7.8660us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1496])
+56.2027s  97.816ms  cudaMemcpyAsync
+56.3201s  36.139us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1498])
+56.3201s  6.6830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1499])
+56.3201s  97.542ms  cudaMemcpyAsync
+56.4371s  36.372us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1501])
+56.4371s  6.3090us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1502])
+56.4372s  97.806ms  cudaMemcpyAsync
+56.5544s  43.285us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1504])
+56.5544s  6.8220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1505])
+56.5544s  97.493ms  cudaMemcpyAsync
+56.6712s  37.393us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1507])
+56.6713s  6.2450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1508])
+56.6713s  97.723ms  cudaMemcpyAsync
+56.7885s  37.957us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1510])
+56.7885s  6.0720us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1511])
+56.7885s  97.562ms  cudaMemcpyAsync
+56.9054s  42.181us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1513])
+56.9055s  7.1050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1514])
+56.9055s  96.598ms  cudaMemcpyAsync
+57.0217s  50.392us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1516])
+57.0218s  6.9880us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1517])
+57.0218s  96.802ms  cudaMemcpyAsync
+57.1380s  41.927us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1519])
+57.1380s  6.7210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1520])
+57.1380s  97.438ms  cudaMemcpyAsync
+57.2548s  36.774us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1522])
+57.2549s  6.5710us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1523])
+57.2549s  97.458ms  cudaMemcpyAsync
+57.3709s  36.642us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1525])
+57.3709s  6.1190us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1526])
+57.3709s  97.288ms  cudaMemcpyAsync
+57.4871s  43.323us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1528])
+57.4872s  6.6470us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1529])
+57.4872s  97.541ms  cudaMemcpyAsync
+57.6035s  40.287us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1531])
+57.6036s  6.6910us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1532])
+57.6036s  96.624ms  cudaMemcpyAsync
+57.7191s  36.412us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1534])
+57.7191s  6.3000us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1535])
+57.7192s  97.370ms  cudaMemcpyAsync
+57.8355s  43.598us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1537])
+57.8355s  6.9960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1538])
+57.8355s  97.516ms  cudaMemcpyAsync
+57.9517s  39.828us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1540])
+57.9518s  6.8420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1541])
+57.9518s  97.794ms  cudaMemcpyAsync
+58.0683s  70.013us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1543])
+58.0684s  6.5980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1544])
+58.0684s  96.696ms  cudaMemcpyAsync
+58.1839s  34.930us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1546])
+58.1839s  6.4760us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1547])
+58.1839s  99.058ms  cudaMemcpyAsync
+58.3021s  43.826us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1549])
+58.3021s  8.1650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1550])
+58.3021s  97.319ms  cudaMemcpyAsync
+58.4188s  42.178us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1552])
+58.4188s  6.9450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1553])
+58.4188s  95.845ms  cudaMemcpyAsync
+58.5342s  38.514us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1555])
+58.5342s  6.7760us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1556])
+58.5342s  99.070ms  cudaMemcpyAsync
+58.6526s  43.624us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1558])
+58.6526s  7.5680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1559])
+58.6526s  97.534ms  cudaMemcpyAsync
+58.7695s  36.695us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1561])
+58.7695s  6.0160us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1562])
+58.7695s  97.123ms  cudaMemcpyAsync
+58.8860s  39.295us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1564])
+58.8861s  7.2460us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1565])
+58.8861s  97.419ms  cudaMemcpyAsync
+59.0031s  39.263us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1567])
+59.0032s  6.7790us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1568])
+59.0032s  99.927ms  cudaMemcpyAsync
+59.1224s  38.226us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1570])
+59.1224s  6.9360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1571])
+59.1224s  97.147ms  cudaMemcpyAsync
+59.2387s  43.959us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1573])
+59.2388s  6.9160us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1574])
+59.2388s  96.530ms  cudaMemcpyAsync
+59.3538s  38.188us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1576])
+59.3538s  6.4120us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1577])
+59.3538s  96.589ms  cudaMemcpyAsync
+59.4691s  36.005us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1579])
+59.4692s  6.8230us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1580])
+59.4692s  96.699ms  cudaMemcpyAsync
+59.5847s  43.915us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1582])
+59.5847s  6.6800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1583])
+59.5847s  96.764ms  cudaMemcpyAsync
+59.7002s  47.394us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1585])
+59.7002s  7.4790us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1586])
+59.7002s  97.360ms  cudaMemcpyAsync
+59.8163s  44.595us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1588])
+59.8164s  8.1530us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1589])
+59.8164s  97.189ms  cudaMemcpyAsync
+59.9325s  39.951us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1591])
+59.9326s  7.0380us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1592])
+59.9326s  98.006ms  cudaMemcpyAsync
+60.0498s  40.356us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1594])
+60.0498s  7.0170us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1595])
+60.0498s  96.982ms  cudaMemcpyAsync
+60.1658s  43.843us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1597])
+60.1658s  7.2160us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1598])
+60.1659s  96.866ms  cudaMemcpyAsync
+60.2816s  43.554us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1600])
+60.2816s  8.0980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1601])
+60.2816s  97.372ms  cudaMemcpyAsync
+60.3979s  42.736us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1603])
+60.3980s  6.3130us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1604])
+60.3980s  97.469ms  cudaMemcpyAsync
+60.5144s  42.882us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1606])
+60.5144s  6.5610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1607])
+60.5144s  97.081ms  cudaMemcpyAsync
+60.6304s  43.900us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1609])
+60.6305s  10.371us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1610])
+60.6305s  97.518ms  cudaMemcpyAsync
+60.7470s  43.509us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1612])
+60.7470s  6.8930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1613])
+60.7470s  97.441ms  cudaMemcpyAsync
+60.8635s  43.589us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1615])
+60.8635s  8.3520us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1616])
+60.8635s  97.093ms  cudaMemcpyAsync
+60.9796s  38.820us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1618])
+60.9796s  6.8330us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1619])
+60.9796s  96.971ms  cudaMemcpyAsync
+61.0956s  44.163us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1621])
+61.0957s  7.5690us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1622])
+61.0957s  96.194ms  cudaMemcpyAsync
+61.2108s  36.182us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1624])
+61.2108s  6.2640us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1625])
+61.2108s  96.248ms  cudaMemcpyAsync
+61.3252s  38.727us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1627])
+61.3252s  6.4730us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1628])
+61.3252s  96.069ms  cudaMemcpyAsync
+61.4401s  39.336us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1630])
+61.4401s  7.0420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1631])
+61.4401s  96.417ms  cudaMemcpyAsync
+61.5551s  37.971us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1633])
+61.5551s  7.2610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1634])
+61.5551s  95.583ms  cudaMemcpyAsync
+61.6692s  42.066us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1636])
+61.6693s  6.7450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1637])
+61.6693s  96.179ms  cudaMemcpyAsync
+61.7844s  38.819us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1639])
+61.7845s  6.9570us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1640])
+61.7845s  96.544ms  cudaMemcpyAsync
+61.8997s  43.910us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1642])
+61.8997s  7.8440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1643])
+61.8997s  97.666ms  cudaMemcpyAsync
+62.0161s  43.723us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1645])
+62.0161s  7.9330us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1646])
+62.0161s  98.381ms  cudaMemcpyAsync
+62.1331s  44.177us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1648])
+62.1331s  6.6000us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1649])
+62.1331s  97.369ms  cudaMemcpyAsync
+62.2488s  42.288us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1651])
+62.2489s  7.3480us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1652])
+62.2489s  96.860ms  cudaMemcpyAsync
+62.3645s  62.375us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1654])
+62.3645s  7.9710us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1655])
+62.3646s  97.715ms  cudaMemcpyAsync
+62.4810s  42.355us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1657])
+62.4811s  7.7340us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1658])
+62.4811s  97.216ms  cudaMemcpyAsync
+62.5970s  41.886us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1660])
+62.5970s  6.8140us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1661])
+62.5971s  97.358ms  cudaMemcpyAsync
+62.7131s  43.451us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1663])
+62.7132s  10.382us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1664])
+62.7132s  97.754ms  cudaMemcpyAsync
+62.8297s  37.420us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1666])
+62.8297s  7.1610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1667])
+62.8297s  97.536ms  cudaMemcpyAsync
+62.9462s  46.445us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1669])
+62.9463s  6.7980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1670])
+62.9463s  97.589ms  cudaMemcpyAsync
+63.0625s  42.754us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1672])
+63.0626s  7.3630us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1673])
+63.0626s  97.687ms  cudaMemcpyAsync
+63.1790s  37.146us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1675])
+63.1790s  6.2010us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1676])
+63.1790s  96.760ms  cudaMemcpyAsync
+63.2945s  69.974us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1678])
+63.2946s  6.8800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1679])
+63.2946s  95.628ms  cudaMemcpyAsync
+63.4089s  48.340us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1681])
+63.4090s  6.9600us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1682])
+63.4090s  95.973ms  cudaMemcpyAsync
+63.5237s  40.611us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1684])
+63.5237s  7.7280us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1685])
+63.5237s  95.465ms  cudaMemcpyAsync
+63.6378s  40.783us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1687])
+63.6378s  6.8640us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1688])
+63.6378s  96.737ms  cudaMemcpyAsync
+63.7532s  44.024us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1690])
+63.7532s  6.6220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1691])
+63.7532s  96.706ms  cudaMemcpyAsync
+63.8686s  42.991us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1693])
+63.8686s  7.3160us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1694])
+63.8686s  96.945ms  cudaMemcpyAsync
+63.9842s  44.211us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1696])
+63.9842s  6.6420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1697])
+63.9843s  96.793ms  cudaMemcpyAsync
+64.0996s  44.579us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1699])
+64.0996s  7.1310us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1700])
+64.0996s  97.910ms  cudaMemcpyAsync
+64.2162s  40.355us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1702])
+64.2162s  6.9570us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1703])
+64.2162s  97.089ms  cudaMemcpyAsync
+64.3312s  38.653us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1705])
+64.3312s  7.0810us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1706])
+64.3313s  97.226ms  cudaMemcpyAsync
+64.4467s  36.341us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1708])
+64.4468s  6.5620us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1709])
+64.4468s  97.337ms  cudaMemcpyAsync
+64.5623s  42.395us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1711])
+64.5624s  6.7630us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1712])
+64.5624s  97.485ms  cudaMemcpyAsync
+64.6783s  50.381us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1714])
+64.6784s  7.4300us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1715])
+64.6784s  96.609ms  cudaMemcpyAsync
+64.7934s  39.381us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1717])
+64.7935s  7.0960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1718])
+64.7935s  95.718ms  cudaMemcpyAsync
+64.9079s  39.186us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1720])
+64.9079s  6.9720us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1721])
+64.9079s  95.821ms  cudaMemcpyAsync
+65.0226s  40.227us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1723])
+65.0226s  6.8830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1724])
+65.0226s  96.953ms  cudaMemcpyAsync
+65.1381s  38.505us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1726])
+65.1381s  6.7400us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1727])
+65.1381s  96.683ms  cudaMemcpyAsync
+65.2532s  43.922us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1729])
+65.2532s  7.2950us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1730])
+65.2532s  96.092ms  cudaMemcpyAsync
+65.3678s  44.731us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1732])
+65.3679s  7.0830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1733])
+65.3679s  96.378ms  cudaMemcpyAsync
+65.4828s  44.075us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1735])
+65.4828s  7.1680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1736])
+65.4828s  97.346ms  cudaMemcpyAsync
+65.5987s  43.341us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1738])
+65.5987s  7.9420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1739])
+65.5987s  97.145ms  cudaMemcpyAsync
+65.7144s  41.307us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1741])
+65.7144s  6.4800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1742])
+65.7145s  97.468ms  cudaMemcpyAsync
+65.8306s  44.063us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1744])
+65.8306s  7.1150us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1745])
+65.8307s  97.408ms  cudaMemcpyAsync
+65.9464s  38.003us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1747])
+65.9464s  6.8380us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1748])
+65.9465s  97.093ms  cudaMemcpyAsync
+66.0621s  43.217us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1750])
+66.0621s  8.3430us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1751])
+66.0622s  97.361ms  cudaMemcpyAsync
+66.1780s  36.857us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1753])
+66.1780s  6.3660us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1754])
+66.1780s  95.923ms  cudaMemcpyAsync
+66.2925s  38.769us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1756])
+66.2925s  6.6210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1757])
+66.2925s  95.601ms  cudaMemcpyAsync
+66.4065s  44.114us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1759])
+66.4066s  6.7290us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1760])
+66.4066s  97.003ms  cudaMemcpyAsync
+66.5220s  43.610us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1762])
+66.5221s  6.6580us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1763])
+66.5221s  96.641ms  cudaMemcpyAsync
+66.6370s  42.633us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1765])
+66.6371s  7.0010us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1766])
+66.6371s  96.769ms  cudaMemcpyAsync
+66.7522s  41.908us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1768])
+66.7522s  7.1960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1769])
+66.7522s  96.684ms  cudaMemcpyAsync
+66.8673s  45.582us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1771])
+66.8674s  6.9740us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1772])
+66.8674s  96.286ms  cudaMemcpyAsync
+66.9821s  48.957us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1774])
+66.9821s  6.9680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1775])
+66.9821s  97.237ms  cudaMemcpyAsync
+67.0977s  44.430us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1777])
+67.0977s  7.3220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1778])
+67.0977s  97.538ms  cudaMemcpyAsync
+67.2136s  43.303us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1780])
+67.2136s  7.5460us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1781])
+67.2136s  97.164ms  cudaMemcpyAsync
+67.3285s  43.344us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1783])
+67.3286s  6.9910us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1784])
+67.3286s  98.063ms  cudaMemcpyAsync
+67.4447s  43.911us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1786])
+67.4448s  7.9610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1787])
+67.4448s  97.725ms  cudaMemcpyAsync
+67.5607s  38.930us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1789])
+67.5608s  6.6140us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1790])
+67.5608s  95.757ms  cudaMemcpyAsync
+67.6747s  52.794us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1792])
+67.6747s  7.0500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1793])
+67.6747s  95.896ms  cudaMemcpyAsync
+67.7888s  41.873us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1795])
+67.7889s  6.7210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1796])
+67.7889s  95.619ms  cudaMemcpyAsync
+67.9028s  36.999us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1798])
+67.9028s  6.8050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1799])
+67.9028s  96.665ms  cudaMemcpyAsync
+68.0176s  43.760us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1801])
+68.0176s  6.6300us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1802])
+68.0176s  96.275ms  cudaMemcpyAsync
+68.1321s  41.129us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1804])
+68.1321s  6.9010us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1805])
+68.1321s  96.421ms  cudaMemcpyAsync
+68.2467s  38.757us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1807])
+68.2467s  6.8700us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1808])
+68.2467s  97.346ms  cudaMemcpyAsync
+68.3622s  40.144us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1810])
+68.3622s  6.8340us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1811])
+68.3623s  96.953ms  cudaMemcpyAsync
+68.4773s  40.625us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1813])
+68.4774s  7.5970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1814])
+68.4774s  97.508ms  cudaMemcpyAsync
+68.5931s  53.334us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1816])
+68.5931s  6.9110us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1817])
+68.5931s  95.722ms  cudaMemcpyAsync
+68.7070s  47.803us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1819])
+68.7071s  7.9250us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1820])
+68.7071s  95.982ms  cudaMemcpyAsync
+68.8216s  45.666us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1822])
+68.8216s  8.5830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1823])
+68.8216s  97.048ms  cudaMemcpyAsync
+68.9373s  39.390us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1825])
+68.9373s  6.8270us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1826])
+68.9373s  101.74ms  cudaMemcpyAsync
+69.0575s  38.700us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1828])
+69.0575s  6.9360us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1829])
+69.0575s  95.813ms  cudaMemcpyAsync
+69.1715s  38.025us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1831])
+69.1716s  6.4060us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1832])
+69.1716s  95.263ms  cudaMemcpyAsync
+69.2851s  44.934us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1834])
+69.2851s  7.1080us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1835])
+69.2851s  96.227ms  cudaMemcpyAsync
+69.3995s  35.607us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1837])
+69.3995s  6.3740us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1838])
+69.3995s  96.172ms  cudaMemcpyAsync
+69.5138s  44.421us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1840])
+69.5138s  13.143us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1841])
+69.5138s  96.932ms  cudaMemcpyAsync
+69.6287s  39.537us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1843])
+69.6288s  6.5970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1844])
+69.6288s  97.463ms  cudaMemcpyAsync
+69.7443s  43.570us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1846])
+69.7444s  6.9970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1847])
+69.7444s  97.247ms  cudaMemcpyAsync
+69.8600s  42.820us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1849])
+69.8600s  6.9220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1850])
+69.8600s  95.671ms  cudaMemcpyAsync
+69.9741s  54.871us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1852])
+69.9741s  7.5800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1853])
+69.9741s  95.736ms  cudaMemcpyAsync
+70.0883s  54.117us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1855])
+70.0883s  7.4930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1856])
+70.0883s  95.367ms  cudaMemcpyAsync
+70.2018s  42.339us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1858])
+70.2019s  7.9860us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1859])
+70.2019s  96.305ms  cudaMemcpyAsync
+70.3165s  42.416us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1861])
+70.3165s  6.6590us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1862])
+70.3165s  96.579ms  cudaMemcpyAsync
+70.4312s  39.657us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1864])
+70.4312s  7.2070us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1865])
+70.4312s  96.183ms  cudaMemcpyAsync
+70.5453s  38.226us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1867])
+70.5454s  6.7530us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1868])
+70.5454s  97.478ms  cudaMemcpyAsync
+70.6607s  42.167us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1870])
+70.6608s  11.958us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1871])
+70.6608s  97.493ms  cudaMemcpyAsync
+70.7764s  52.062us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1873])
+70.7765s  6.9200us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1874])
+70.7765s  95.878ms  cudaMemcpyAsync
+70.8904s  49.073us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1876])
+70.8905s  6.7750us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1877])
+70.8905s  95.498ms  cudaMemcpyAsync
+71.0041s  52.648us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1879])
+71.0041s  7.3720us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1880])
+71.0041s  95.482ms  cudaMemcpyAsync
+71.1177s  45.087us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1882])
+71.1177s  7.7830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1883])
+71.1177s  96.046ms  cudaMemcpyAsync
+71.2319s  36.723us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1885])
+71.2319s  6.7420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1886])
+71.2320s  96.446ms  cudaMemcpyAsync
+71.3623s  59.338us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1888])
+71.3623s  13.547us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1889])
+71.3623s  95.840ms  cudaMemcpyAsync
+71.4919s  59.195us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1891])
+71.4920s  13.998us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1892])
+71.4920s  96.010ms  cudaMemcpyAsync
+71.6218s  56.185us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1894])
+71.6218s  13.872us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1895])
+71.6218s  96.079ms  cudaMemcpyAsync
+71.7520s  58.428us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1897])
+71.7520s  13.936us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1898])
+71.7521s  96.515ms  cudaMemcpyAsync
+71.8823s  61.724us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1900])
+71.8823s  12.502us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1901])
+71.8823s  95.614ms  cudaMemcpyAsync
+72.0117s  61.793us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1903])
+72.0117s  12.225us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1904])
+72.0117s  95.476ms  cudaMemcpyAsync
+72.1409s  58.542us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1906])
+72.1409s  12.822us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1907])
+72.1409s  95.781ms  cudaMemcpyAsync
+72.2703s  59.491us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1909])
+72.2703s  11.983us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1910])
+72.2703s  95.709ms  cudaMemcpyAsync
+72.3826s  36.500us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1912])
+72.3826s  6.2080us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1913])
+72.3826s  96.904ms  cudaMemcpyAsync
+72.4970s  39.660us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1915])
+72.4971s  7.3560us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1916])
+72.4971s  96.165ms  cudaMemcpyAsync
+72.6110s  38.162us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1918])
+72.6110s  6.9450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1919])
+72.6110s  97.500ms  cudaMemcpyAsync
+72.7262s  43.950us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1921])
+72.7262s  7.1580us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1922])
+72.7262s  96.972ms  cudaMemcpyAsync
+72.8414s  46.238us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1924])
+72.8415s  7.4050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1925])
+72.8415s  96.125ms  cudaMemcpyAsync
+72.9556s  68.014us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1927])
+72.9556s  17.403us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1928])
+72.9556s  96.280ms  cudaMemcpyAsync
+73.0697s  44.127us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1930])
+73.0698s  7.9380us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1931])
+73.0698s  96.136ms  cudaMemcpyAsync
+73.1836s  43.517us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1933])
+73.1836s  7.0390us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1934])
+73.1836s  95.812ms  cudaMemcpyAsync
+73.2974s  42.554us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1936])
+73.2974s  6.8350us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1937])
+73.2974s  96.762ms  cudaMemcpyAsync
+73.4119s  39.803us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1939])
+73.4119s  6.7920us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1940])
+73.4119s  96.690ms  cudaMemcpyAsync
+73.5263s  43.799us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1942])
+73.5264s  6.8110us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1943])
+73.5264s  96.896ms  cudaMemcpyAsync
+73.6411s  44.601us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1945])
+73.6411s  7.3750us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1946])
+73.6411s  96.295ms  cudaMemcpyAsync
+73.7553s  45.874us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1948])
+73.7554s  13.370us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1949])
+73.7554s  96.303ms  cudaMemcpyAsync
+73.8694s  39.066us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1951])
+73.8694s  6.4300us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1952])
+73.8694s  96.081ms  cudaMemcpyAsync
+73.9832s  43.190us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1954])
+73.9833s  7.6300us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1955])
+73.9833s  96.321ms  cudaMemcpyAsync
+74.0973s  38.110us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1957])
+74.0973s  6.6060us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1958])
+74.0973s  96.722ms  cudaMemcpyAsync
+74.2120s  40.710us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1960])
+74.2120s  6.8790us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1961])
+74.2120s  96.870ms  cudaMemcpyAsync
+74.3265s  42.050us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1963])
+74.3266s  6.7740us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1964])
+74.3266s  96.949ms  cudaMemcpyAsync
+74.4411s  44.159us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1966])
+74.4412s  6.6880us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1967])
+74.4412s  96.125ms  cudaMemcpyAsync
+74.5550s  50.542us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1969])
+74.5550s  7.3430us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1970])
+74.5550s  95.761ms  cudaMemcpyAsync
+74.6684s  36.838us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1972])
+74.6685s  6.9960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1973])
+74.6685s  95.545ms  cudaMemcpyAsync
+74.7819s  39.688us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1975])
+74.7819s  6.7950us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1976])
+74.7819s  95.977ms  cudaMemcpyAsync
+74.8955s  46.301us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1978])
+74.8955s  6.9190us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1979])
+74.8956s  96.821ms  cudaMemcpyAsync
+75.0100s  43.686us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1981])
+75.0101s  7.4650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1982])
+75.0101s  97.222ms  cudaMemcpyAsync
+75.1248s  36.504us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1984])
+75.1248s  6.3730us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1985])
+75.1248s  96.095ms  cudaMemcpyAsync
+75.2385s  37.881us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1987])
+75.2386s  6.5880us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1988])
+75.2386s  95.983ms  cudaMemcpyAsync
+75.3521s  42.970us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1990])
+75.3522s  7.3570us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1991])
+75.3522s  96.238ms  cudaMemcpyAsync
+75.4660s  44.246us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1993])
+75.4661s  8.4100us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1994])
+75.4661s  95.978ms  cudaMemcpyAsync
+75.5797s  41.054us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1996])
+75.5797s  7.0030us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [1997])
+75.5797s  96.301ms  cudaMemcpyAsync
+75.6934s  42.397us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [1999])
+75.6935s  8.4320us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2000])
+75.6935s  96.890ms  cudaMemcpyAsync
+75.8079s  47.897us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2002])
+75.8080s  7.6970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2003])
+75.8080s  96.443ms  cudaMemcpyAsync
+75.9220s  43.225us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2005])
+75.9220s  7.5840us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2006])
+75.9221s  96.279ms  cudaMemcpyAsync
+76.0360s  52.238us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2008])
+76.0360s  7.1740us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2009])
+76.0360s  95.414ms  cudaMemcpyAsync
+76.1490s  50.741us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2011])
+76.1491s  7.6400us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2012])
+76.1491s  95.632ms  cudaMemcpyAsync
+76.2625s  53.138us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2014])
+76.2626s  7.5990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2015])
+76.2626s  96.592ms  cudaMemcpyAsync
+76.3766s  40.359us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2017])
+76.3766s  6.8650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2018])
+76.3766s  97.306ms  cudaMemcpyAsync
+76.4915s  45.335us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2020])
+76.4915s  7.0990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2021])
+76.4915s  96.767ms  cudaMemcpyAsync
+76.6058s  52.402us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2023])
+76.6058s  7.2210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2024])
+76.6058s  95.208ms  cudaMemcpyAsync
+76.7187s  44.210us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2026])
+76.7187s  6.9790us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2027])
+76.7187s  96.360ms  cudaMemcpyAsync
+76.8326s  44.417us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2029])
+76.8326s  7.5210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2030])
+76.8326s  96.353ms  cudaMemcpyAsync
+76.9464s  34.312us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2032])
+76.9465s  6.7510us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2033])
+76.9465s  96.065ms  cudaMemcpyAsync
+77.0599s  42.867us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2035])
+77.0599s  7.0500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2036])
+77.0599s  97.112ms  cudaMemcpyAsync
+77.1745s  39.246us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2038])
+77.1745s  7.7970us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2039])
+77.1745s  97.019ms  cudaMemcpyAsync
+77.2890s  46.501us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2041])
+77.2890s  6.6410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2042])
+77.2890s  96.397ms  cudaMemcpyAsync
+77.4028s  39.212us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2044])
+77.4028s  6.5510us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2045])
+77.4028s  96.099ms  cudaMemcpyAsync
+77.5164s  50.880us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2047])
+77.5165s  8.7090us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2048])
+77.5165s  96.052ms  cudaMemcpyAsync
+77.6302s  43.238us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2050])
+77.6303s  7.2610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2051])
+77.6303s  96.356ms  cudaMemcpyAsync
+77.7445s  38.552us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2053])
+77.7445s  7.1590us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2054])
+77.7445s  96.942ms  cudaMemcpyAsync
+77.8589s  48.541us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2056])
+77.8590s  7.5770us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2057])
+77.8590s  96.732ms  cudaMemcpyAsync
+77.9732s  46.078us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2059])
+77.9733s  7.3980us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2060])
+77.9733s  96.455ms  cudaMemcpyAsync
+78.0871s  44.826us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2062])
+78.0871s  8.0630us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2063])
+78.0871s  96.129ms  cudaMemcpyAsync
+78.2005s  45.327us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2065])
+78.2005s  6.9620us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2066])
+78.2006s  96.216ms  cudaMemcpyAsync
+78.3141s  43.640us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2068])
+78.3141s  6.9670us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2069])
+78.3141s  96.302ms  cudaMemcpyAsync
+78.4278s  57.016us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2071])
+78.4278s  8.5710us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2072])
+78.4278s  96.806ms  cudaMemcpyAsync
+78.5419s  46.334us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2074])
+78.5419s  7.2450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2075])
+78.5419s  97.157ms  cudaMemcpyAsync
+78.6564s  38.505us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2077])
+78.6564s  7.1990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2078])
+78.6565s  96.662ms  cudaMemcpyAsync
+78.7706s  62.121us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2080])
+78.7706s  10.240us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2081])
+78.7706s  95.995ms  cudaMemcpyAsync
+78.8846s  42.110us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2083])
+78.8847s  7.8330us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2084])
+78.8847s  95.691ms  cudaMemcpyAsync
+78.9980s  55.239us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2086])
+78.9980s  7.9540us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2087])
+78.9980s  95.221ms  cudaMemcpyAsync
+79.1108s  43.416us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2089])
+79.1108s  7.6740us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2090])
+79.1108s  97.117ms  cudaMemcpyAsync
+79.2254s  44.311us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2092])
+79.2254s  6.9450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2093])
+79.2254s  97.184ms  cudaMemcpyAsync
+79.3400s  46.473us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2095])
+79.3400s  7.5870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2096])
+79.3400s  96.015ms  cudaMemcpyAsync
+79.4535s  45.363us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2098])
+79.4535s  7.2170us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2099])
+79.4535s  96.198ms  cudaMemcpyAsync
+79.5670s  44.019us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2101])
+79.5670s  7.1180us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2102])
+79.5670s  96.181ms  cudaMemcpyAsync
+79.6806s  44.420us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2104])
+79.6807s  7.3320us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2105])
+79.6807s  95.847ms  cudaMemcpyAsync
+79.7939s  45.765us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2107])
+79.7940s  7.7680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2108])
+79.7940s  96.785ms  cudaMemcpyAsync
+79.9080s  45.055us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2110])
+79.9081s  7.2540us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2111])
+79.9081s  97.060ms  cudaMemcpyAsync
+80.0224s  45.501us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2113])
+80.0225s  7.3790us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2114])
+80.0225s  95.885ms  cudaMemcpyAsync
+80.1359s  43.552us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2116])
+80.1360s  7.6130us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2117])
+80.1360s  96.509ms  cudaMemcpyAsync
+80.2499s  46.764us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2119])
+80.2500s  7.2290us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2120])
+80.2500s  96.158ms  cudaMemcpyAsync
+80.3633s  43.009us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2122])
+80.3634s  7.1120us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2123])
+80.3634s  96.003ms  cudaMemcpyAsync
+80.4768s  44.754us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2125])
+80.4769s  8.5320us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2126])
+80.4769s  96.685ms  cudaMemcpyAsync
+80.5910s  42.519us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2128])
+80.5911s  6.9320us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2129])
+80.5911s  97.001ms  cudaMemcpyAsync
+80.7054s  49.129us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2131])
+80.7054s  6.8950us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2132])
+80.7054s  95.823ms  cudaMemcpyAsync
+80.8188s  53.054us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2134])
+80.8189s  7.0510us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2135])
+80.8189s  95.358ms  cudaMemcpyAsync
+80.9316s  45.600us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2137])
+80.9316s  7.8610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2138])
+80.9316s  96.249ms  cudaMemcpyAsync
+81.0454s  45.657us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2140])
+81.0454s  6.8680us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2141])
+81.0454s  96.239ms  cudaMemcpyAsync
+81.1590s  37.077us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2143])
+81.1590s  6.7450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2144])
+81.1590s  96.749ms  cudaMemcpyAsync
+81.2732s  45.386us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2146])
+81.2732s  8.1340us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2147])
+81.2732s  96.833ms  cudaMemcpyAsync
+81.3876s  47.202us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2149])
+81.3877s  7.5480us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2150])
+81.3877s  96.240ms  cudaMemcpyAsync
+81.5013s  47.101us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2152])
+81.5014s  8.5960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2153])
+81.5014s  95.996ms  cudaMemcpyAsync
+81.6148s  45.960us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2155])
+81.6148s  7.1840us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2156])
+81.6148s  96.132ms  cudaMemcpyAsync
+81.7284s  37.159us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2158])
+81.7284s  6.6850us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2159])
+81.7284s  95.861ms  cudaMemcpyAsync
+81.8418s  45.724us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2161])
+81.8418s  7.5460us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2162])
+81.8418s  97.058ms  cudaMemcpyAsync
+81.9564s  45.082us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2164])
+81.9564s  7.4280us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2165])
+81.9564s  96.633ms  cudaMemcpyAsync
+82.0705s  38.576us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2167])
+82.0705s  6.7720us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2168])
+82.0705s  95.299ms  cudaMemcpyAsync
+82.1833s  48.623us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2170])
+82.1833s  7.6170us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2171])
+82.1833s  95.268ms  cudaMemcpyAsync
+82.2959s  37.476us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2173])
+82.2959s  6.9870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2174])
+82.2959s  95.331ms  cudaMemcpyAsync
+82.4086s  44.078us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2176])
+82.4087s  7.2080us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2177])
+82.4087s  96.970ms  cudaMemcpyAsync
+82.5230s  43.430us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2179])
+82.5231s  7.3380us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2180])
+82.5231s  97.495ms  cudaMemcpyAsync
+82.6380s  51.915us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2182])
+82.6380s  7.9450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2183])
+82.6380s  95.936ms  cudaMemcpyAsync
+82.7513s  52.993us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2185])
+82.7513s  7.2270us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2186])
+82.7513s  95.365ms  cudaMemcpyAsync
+82.8642s  45.297us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2188])
+82.8642s  8.5990us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2189])
+82.8643s  95.909ms  cudaMemcpyAsync
+82.9775s  42.521us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2191])
+82.9775s  6.9210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2192])
+82.9775s  96.163ms  cudaMemcpyAsync
+83.0910s  40.664us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2194])
+83.0911s  6.7130us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2195])
+83.0911s  97.124ms  cudaMemcpyAsync
+83.2054s  45.018us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2197])
+83.2054s  7.1610us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2198])
+83.2054s  96.092ms  cudaMemcpyAsync
+83.3189s  47.009us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2200])
+83.3190s  6.9340us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2201])
+83.3190s  95.928ms  cudaMemcpyAsync
+83.4325s  45.939us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2203])
+83.4326s  7.0660us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2204])
+83.4326s  96.068ms  cudaMemcpyAsync
+83.5461s  39.240us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2206])
+83.5461s  6.5440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2207])
+83.5461s  95.876ms  cudaMemcpyAsync
+83.6595s  42.417us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2209])
+83.6595s  7.4180us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2210])
+83.6595s  96.702ms  cudaMemcpyAsync
+83.7736s  41.543us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2212])
+83.7736s  7.5100us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2213])
+83.7736s  96.968ms  cudaMemcpyAsync
+83.8879s  45.741us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2215])
+83.8880s  7.8420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2216])
+83.8880s  95.447ms  cudaMemcpyAsync
+84.0009s  52.624us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2218])
+84.0010s  7.4730us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2219])
+84.0010s  95.202ms  cudaMemcpyAsync
+84.1135s  36.422us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2221])
+84.1135s  6.5350us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2222])
+84.1135s  95.599ms  cudaMemcpyAsync
+84.2264s  46.230us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2224])
+84.2264s  7.3150us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2225])
+84.2264s  96.922ms  cudaMemcpyAsync
+84.3405s  42.630us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2227])
+84.3405s  7.0490us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2228])
+84.3405s  96.615ms  cudaMemcpyAsync
+84.4545s  52.424us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2230])
+84.4546s  7.3160us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2231])
+84.4546s  95.139ms  cudaMemcpyAsync
+84.5671s  45.151us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2233])
+84.5672s  7.1460us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2234])
+84.5672s  95.336ms  cudaMemcpyAsync
+84.6798s  43.413us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2236])
+84.6799s  7.0420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2237])
+84.6799s  96.273ms  cudaMemcpyAsync
+84.7934s  36.789us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2239])
+84.7934s  6.6020us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2240])
+84.7934s  96.116ms  cudaMemcpyAsync
+84.9069s  44.920us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2242])
+84.9069s  7.0890us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2243])
+84.9069s  96.816ms  cudaMemcpyAsync
+85.0211s  46.112us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2245])
+85.0211s  7.6750us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2246])
+85.0211s  96.058ms  cudaMemcpyAsync
+85.1345s  40.638us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2248])
+85.1345s  7.9220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2249])
+85.1345s  95.977ms  cudaMemcpyAsync
+85.2479s  39.162us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2251])
+85.2479s  7.1430us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2252])
+85.2479s  95.667ms  cudaMemcpyAsync
+85.3607s  36.099us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2254])
+85.3608s  6.4670us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2255])
+85.3608s  96.316ms  cudaMemcpyAsync
+85.4742s  37.389us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2257])
+85.4742s  6.6960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2258])
+85.4743s  96.913ms  cudaMemcpyAsync
+85.5884s  42.167us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2260])
+85.5884s  6.8830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2261])
+85.5884s  97.188ms  cudaMemcpyAsync
+85.7030s  45.941us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2263])
+85.7031s  6.9000us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2264])
+85.7031s  96.399ms  cudaMemcpyAsync
+85.8170s  54.121us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2266])
+85.8170s  7.3130us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2267])
+85.8171s  96.964ms  cudaMemcpyAsync
+85.9313s  39.941us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2269])
+85.9314s  7.4170us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2270])
+85.9314s  95.491ms  cudaMemcpyAsync
+86.0444s  44.903us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2272])
+86.0444s  7.5640us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2273])
+86.0444s  95.945ms  cudaMemcpyAsync
+86.1575s  37.738us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2275])
+86.1575s  6.9790us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2276])
+86.1575s  97.014ms  cudaMemcpyAsync
+86.2718s  43.361us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2278])
+86.2719s  7.1210us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2279])
+86.2719s  97.252ms  cudaMemcpyAsync
+86.3865s  46.502us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2281])
+86.3866s  8.5100us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2282])
+86.3866s  96.093ms  cudaMemcpyAsync
+86.4997s  44.837us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2284])
+86.4998s  7.8420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2285])
+86.4998s  96.073ms  cudaMemcpyAsync
+86.6131s  44.830us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2287])
+86.6131s  7.9410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2288])
+86.6132s  96.463ms  cudaMemcpyAsync
+86.7269s  42.826us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2290])
+86.7269s  7.1410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2291])
+86.7269s  96.240ms  cudaMemcpyAsync
+86.8405s  46.891us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2293])
+86.8405s  7.5600us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2294])
+86.8405s  97.264ms  cudaMemcpyAsync
+86.9550s  43.222us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2296])
+86.9550s  7.2020us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2297])
+86.9550s  97.094ms  cudaMemcpyAsync
+87.0695s  39.766us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2299])
+87.0695s  6.6960us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2300])
+87.0695s  95.299ms  cudaMemcpyAsync
+87.1821s  44.938us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2302])
+87.1821s  6.8140us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2303])
+87.1821s  96.219ms  cudaMemcpyAsync
+87.2956s  44.872us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2305])
+87.2957s  7.8580us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2306])
+87.2957s  95.630ms  cudaMemcpyAsync
+87.4086s  41.246us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2308])
+87.4086s  7.6170us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2309])
+87.4086s  96.596ms  cudaMemcpyAsync
+87.5225s  40.442us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2311])
+87.5225s  7.1250us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2312])
+87.5225s  97.193ms  cudaMemcpyAsync
+87.6370s  43.573us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2314])
+87.6371s  6.6430us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2315])
+87.6371s  95.433ms  cudaMemcpyAsync
+87.7499s  44.517us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2317])
+87.7499s  7.8700us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2318])
+87.7499s  96.195ms  cudaMemcpyAsync
+87.8641s  40.910us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2320])
+87.8641s  7.3050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2321])
+87.8641s  95.956ms  cudaMemcpyAsync
+87.9775s  38.664us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2323])
+87.9775s  7.0860us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2324])
+87.9775s  96.039ms  cudaMemcpyAsync
+88.0906s  43.223us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2326])
+88.0907s  7.2850us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2327])
+88.0907s  96.633ms  cudaMemcpyAsync
+88.2045s  43.784us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2329])
+88.2045s  6.9560us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2330])
+88.2045s  97.139ms  cudaMemcpyAsync
+88.3195s  40.804us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2332])
+88.3195s  7.3100us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2333])
+88.3195s  96.101ms  cudaMemcpyAsync
+88.4328s  49.568us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2335])
+88.4329s  7.3560us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2336])
+88.4329s  95.844ms  cudaMemcpyAsync
+88.5459s  45.449us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2338])
+88.5459s  7.3520us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2339])
+88.5459s  96.078ms  cudaMemcpyAsync
+88.6592s  41.919us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2341])
+88.6593s  6.8820us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2342])
+88.6593s  96.361ms  cudaMemcpyAsync
+88.7728s  45.202us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2344])
+88.7729s  7.1540us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2345])
+88.7729s  96.923ms  cudaMemcpyAsync
+88.8872s  45.839us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2347])
+88.8872s  8.4440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2348])
+88.8872s  97.012ms  cudaMemcpyAsync
+89.0015s  54.597us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2350])
+89.0016s  7.7500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2351])
+89.0016s  95.512ms  cudaMemcpyAsync
+89.1145s  50.120us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2353])
+89.1145s  7.1780us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2354])
+89.1145s  95.315ms  cudaMemcpyAsync
+89.2272s  50.842us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2356])
+89.2272s  7.1450us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2357])
+89.2272s  95.563ms  cudaMemcpyAsync
+89.3400s  43.707us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2359])
+89.3401s  7.3550us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2360])
+89.3401s  96.795ms  cudaMemcpyAsync
+89.4541s  43.933us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2362])
+89.4541s  7.3430us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2363])
+89.4542s  96.921ms  cudaMemcpyAsync
+89.5681s  52.389us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2365])
+89.5682s  7.2650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2366])
+89.5682s  95.180ms  cudaMemcpyAsync
+89.6808s  53.955us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2368])
+89.6808s  7.0560us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2369])
+89.6808s  95.040ms  cudaMemcpyAsync
+89.7945s  40.833us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2371])
+89.7945s  7.3120us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2372])
+89.7946s  96.022ms  cudaMemcpyAsync
+89.9104s  49.283us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2374])
+89.9104s  8.1180us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2375])
+89.9104s  96.076ms  cudaMemcpyAsync
+90.0277s  48.938us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2377])
+90.0278s  8.3400us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2378])
+90.0278s  96.064ms  cudaMemcpyAsync
+90.1459s  52.527us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2380])
+90.1460s  8.6270us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2381])
+90.1460s  95.262ms  cudaMemcpyAsync
+90.2645s  51.360us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2383])
+90.2645s  9.5910us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2384])
+90.2645s  95.964ms  cudaMemcpyAsync
+90.3853s  49.584us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2386])
+90.3853s  9.3500us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2387])
+90.3853s  96.038ms  cudaMemcpyAsync
+90.5078s  51.430us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2389])
+90.5079s  10.329us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2390])
+90.5079s  96.372ms  cudaMemcpyAsync
+90.6321s  58.502us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2392])
+90.6322s  10.499us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2393])
+90.6322s  95.537ms  cudaMemcpyAsync
+90.7571s  55.242us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2395])
+90.7572s  11.542us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2396])
+90.7572s  95.339ms  cudaMemcpyAsync
+90.8822s  55.784us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2398])
+90.8822s  13.824us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2399])
+90.8823s  96.006ms  cudaMemcpyAsync
+91.0097s  58.520us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2401])
+91.0098s  13.929us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2402])
+91.0098s  95.362ms  cudaMemcpyAsync
+91.1385s  61.180us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2404])
+91.1385s  13.410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2405])
+91.1386s  95.240ms  cudaMemcpyAsync
+91.2697s  64.764us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2407])
+91.2697s  15.199us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2408])
+91.2698s  96.018ms  cudaMemcpyAsync
+91.3968s  53.783us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2410])
+91.3969s  11.064us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2411])
+91.3969s  96.354ms  cudaMemcpyAsync
+91.5163s  53.390us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2413])
+91.5163s  8.7260us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2414])
+91.5163s  95.280ms  cudaMemcpyAsync
+91.6305s  49.850us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2416])
+91.6306s  7.0080us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2417])
+91.6306s  95.087ms  cudaMemcpyAsync
+91.7420s  39.974us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2419])
+91.7421s  6.5260us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2420])
+91.7421s  95.906ms  cudaMemcpyAsync
+91.8552s  39.608us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2422])
+91.8552s  7.2190us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2423])
+91.8552s  97.155ms  cudaMemcpyAsync
+91.9695s  49.594us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2425])
+91.9696s  7.6440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2426])
+91.9696s  96.507ms  cudaMemcpyAsync
+92.0834s  54.108us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2428])
+92.0834s  8.6650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2429])
+92.0834s  95.390ms  cudaMemcpyAsync
+92.1960s  49.569us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2431])
+92.1961s  7.3570us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2432])
+92.1961s  95.362ms  cudaMemcpyAsync
+92.3088s  45.783us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2434])
+92.3089s  8.0180us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2435])
+92.3089s  96.092ms  cudaMemcpyAsync
+92.4222s  44.065us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2437])
+92.4223s  7.6260us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2438])
+92.4223s  97.085ms  cudaMemcpyAsync
+92.5367s  47.606us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2440])
+92.5367s  7.6140us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2441])
+92.5367s  96.768ms  cudaMemcpyAsync
+92.6508s  45.469us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2443])
+92.6508s  7.9410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2444])
+92.6508s  96.002ms  cudaMemcpyAsync
+92.7640s  46.422us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2446])
+92.7641s  7.7390us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2447])
+92.7641s  96.063ms  cudaMemcpyAsync
+92.8774s  47.961us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2449])
+92.8775s  7.4630us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2450])
+92.8775s  95.939ms  cudaMemcpyAsync
+92.9906s  42.565us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2452])
+92.9906s  7.2920us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2453])
+92.9906s  96.171ms  cudaMemcpyAsync
+93.1038s  45.203us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2455])
+93.1039s  7.0870us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2456])
+93.1039s  96.499ms  cudaMemcpyAsync
+93.2175s  39.085us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2458])
+93.2176s  6.7800us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2459])
+93.2176s  96.254ms  cudaMemcpyAsync
+93.3308s  46.413us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2461])
+93.3308s  7.4690us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2462])
+93.3308s  96.198ms  cudaMemcpyAsync
+93.4441s  45.167us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2464])
+93.4441s  7.3440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2465])
+93.4441s  96.683ms  cudaMemcpyAsync
+93.5580s  44.829us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2467])
+93.5580s  7.3480us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2468])
+93.5580s  96.160ms  cudaMemcpyAsync
+93.6713s  40.881us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2470])
+93.6713s  7.4250us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2471])
+93.6713s  97.453ms  cudaMemcpyAsync
+93.7870s  65.510us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2473])
+93.7871s  7.3750us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2474])
+93.7871s  96.929ms  cudaMemcpyAsync
+93.9015s  56.154us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2476])
+93.9016s  7.6120us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2477])
+93.9016s  95.714ms  cudaMemcpyAsync
+94.0145s  53.226us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2479])
+94.0146s  7.1570us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2480])
+94.0146s  95.819ms  cudaMemcpyAsync
+94.1275s  44.644us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2482])
+94.1275s  7.3080us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2483])
+94.1275s  95.941ms  cudaMemcpyAsync
+94.2406s  38.261us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2485])
+94.2407s  6.9630us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2486])
+94.2407s  95.897ms  cudaMemcpyAsync
+94.3538s  40.609us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2488])
+94.3538s  6.9780us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2489])
+94.3538s  96.721ms  cudaMemcpyAsync
+94.4688s  42.596us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2491])
+94.4689s  7.3370us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2492])
+94.4689s  96.609ms  cudaMemcpyAsync
+94.5827s  40.649us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2494])
+94.5827s  7.4700us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2495])
+94.5827s  96.001ms  cudaMemcpyAsync
+94.6959s  47.041us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2497])
+94.6960s  7.9190us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2498])
+94.6960s  95.984ms  cudaMemcpyAsync
+94.8092s  40.129us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2500])
+94.8092s  7.7020us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2501])
+94.8093s  95.847ms  cudaMemcpyAsync
+94.9223s  48.108us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2503])
+94.9224s  8.4340us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2504])
+94.9224s  96.337ms  cudaMemcpyAsync
+95.0359s  44.604us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2506])
+95.0359s  8.0100us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2507])
+95.0359s  96.995ms  cudaMemcpyAsync
+95.1504s  45.313us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2509])
+95.1504s  7.5630us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2510])
+95.1504s  95.468ms  cudaMemcpyAsync
+95.2631s  45.270us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2512])
+95.2631s  6.9750us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2513])
+95.2631s  96.230ms  cudaMemcpyAsync
+95.3766s  39.794us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2515])
+95.3766s  7.0950us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2516])
+95.3766s  95.822ms  cudaMemcpyAsync
+95.4896s  33.739us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2518])
+95.4897s  6.6530us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2519])
+95.4897s  95.257ms  cudaMemcpyAsync
+95.6021s  41.533us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2521])
+95.6021s  6.9510us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2522])
+95.6021s  96.747ms  cudaMemcpyAsync
+95.7162s  39.422us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2524])
+95.7162s  6.9400us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2525])
+95.7162s  95.308ms  cudaMemcpyAsync
+95.8288s  61.601us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2527])
+95.8288s  7.8410us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2528])
+95.8288s  95.129ms  cudaMemcpyAsync
+95.9412s  38.518us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2530])
+95.9413s  6.7830us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2531])
+95.9413s  95.823ms  cudaMemcpyAsync
+96.0544s  43.914us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2533])
+96.0544s  7.5220us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2534])
+96.0544s  96.357ms  cudaMemcpyAsync
+96.1680s  41.247us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2536])
+96.1680s  8.4820us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2537])
+96.1680s  97.084ms  cudaMemcpyAsync
+96.2826s  46.723us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2539])
+96.2826s  7.3480us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2540])
+96.2826s  96.161ms  cudaMemcpyAsync
+96.3958s  45.258us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2542])
+96.3959s  7.2580us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2543])
+96.3959s  96.581ms  cudaMemcpyAsync
+96.5097s  48.405us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2545])
+96.5097s  7.3080us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2546])
+96.5097s  96.090ms  cudaMemcpyAsync
+96.6240s  83.410us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2548])
+96.6241s  9.4930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2549])
+96.6241s  96.492ms  cudaMemcpyAsync
+96.7392s  42.225us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2551])
+96.7392s  8.7420us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2552])
+96.7392s  114.87ms  cudaMemcpyAsync
+96.8782s  42.291us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2554])
+96.8782s  7.8650us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2555])
+96.8783s  132.41ms  cudaMemcpyAsync
+97.0321s  42.524us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2557])
+97.0321s  7.5770us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2558])
+97.0322s  132.84ms  cudaMemcpyAsync
+97.1880s  142.31us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2560])
+97.1881s  28.670us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2561])
+97.1881s  132.26ms  cudaMemcpyAsync
+97.3435s  41.059us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2563])
+97.3435s  7.9860us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2564])
+97.3436s  132.32ms  cudaMemcpyAsync
+97.4978s  71.692us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2566])
+97.4979s  10.655us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2567])
+97.4979s  129.06ms  cudaMemcpyAsync
+97.6474s  52.881us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2569])
+97.6474s  8.5700us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2570])
+97.6475s  97.456ms  cudaMemcpyAsync
+97.7650s  40.535us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2572])
+97.7650s  6.9930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2573])
+97.7650s  97.638ms  cudaMemcpyAsync
+97.8823s  50.270us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2575])
+97.8824s  7.2530us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2576])
+97.8824s  97.439ms  cudaMemcpyAsync
+97.9987s  55.198us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2578])
+97.9987s  7.7140us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2579])
+97.9987s  95.401ms  cudaMemcpyAsync
+98.1123s  53.940us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2581])
+98.1124s  7.7010us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2582])
+98.1124s  98.055ms  cudaMemcpyAsync
+98.2289s  64.693us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2584])
+98.2290s  7.4240us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2585])
+98.2290s  96.927ms  cudaMemcpyAsync
+98.3448s  39.851us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2587])
+98.3448s  7.2140us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2588])
+98.3449s  97.332ms  cudaMemcpyAsync
+98.4617s  41.489us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2590])
+98.4618s  7.3760us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2591])
+98.4618s  102.59ms  cudaMemcpyAsync
+98.5834s  46.379us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2593])
+98.5835s  11.467us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2594])
+98.5835s  97.646ms  cudaMemcpyAsync
+98.6998s  43.445us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2596])
+98.6998s  7.7440us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2597])
+98.6998s  97.432ms  cudaMemcpyAsync
+98.8158s  42.222us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2599])
+98.8158s  7.2050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2600])
+98.8158s  95.890ms  cudaMemcpyAsync
+98.9292s  46.269us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2602])
+98.9292s  7.4580us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2603])
+98.9292s  108.66ms  cudaMemcpyAsync
+99.0573s  45.435us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2605])
+99.0574s  8.0890us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2606])
+99.0574s  115.41ms  cudaMemcpyAsync
+99.1921s  42.401us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2608])
+99.1921s  8.4880us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2609])
+99.1921s  103.90ms  cudaMemcpyAsync
+99.3145s  49.784us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2611])
+99.3145s  7.9470us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2612])
+99.3145s  109.53ms  cudaMemcpyAsync
+99.4423s  50.978us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2614])
+99.4424s  7.8050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2615])
+99.4424s  95.250ms  cudaMemcpyAsync
+99.5551s  39.238us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2617])
+99.5552s  7.0290us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2618])
+99.5552s  99.463ms  cudaMemcpyAsync
+99.6725s  42.059us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2620])
+99.6726s  7.5250us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2621])
+99.6726s  96.218ms  cudaMemcpyAsync
+99.7867s  40.831us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2623])
+99.7867s  7.5050us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2624])
+99.7867s  95.125ms  cudaMemcpyAsync
+99.8998s  43.337us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2626])
+99.8998s  7.7620us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2627])
+99.8998s  95.475ms  cudaMemcpyAsync
+100.013s  44.986us  cudaLaunchKernel (sandsimGPU(unsigned char*, bool*, int, curandStateXORWOW*, unsigned int) [2629])
+100.013s  7.5930us  cudaLaunchKernel (resetHasMovedGPU(bool*, int) [2630])
+100.013s  98.427ms  cudaMemcpyAsync
+100.142s  32.197us  cudaFree
+100.142s  148.86us  cudaFree
+100.142s  373.85us  cudaFree
